@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "D:\xiao\test\cpu_0\pcores\register_control_v1_00_a\devl\synthesis\register_control_xst.prj"
+-top register_control
+-p virtex5
+-ofn "D:\xiao\test\cpu_0\pcores\register_control_v1_00_a\devl\synthesis\register_control_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib register_control_v1_00_a

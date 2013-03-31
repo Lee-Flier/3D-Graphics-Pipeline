@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="float32to18model" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+float32to18model YourInstanceName (
+    .a(a), // Bus [31 : 0] 
+    .operation_nd(operation_nd),
+    .clk(clk),
+    .sclr(sclr),
+    .result(result), // Bus [17 : 0] 
+    .underflow(underflow),
+    .overflow(overflow),
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="float18_add_translation" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+float18_add_translation YourInstanceName (
+    .a(a), // Bus [17 : 0] 
+    .b(b), // Bus [17 : 0] 
+    .operation_nd(operation_nd),
+    .operation_rfd(operation_rfd),
+    .clk(clk),
+    .result(result), // Bus [17 : 0] 
+    .underflow(underflow),
+    .overflow(overflow),
+    .invalid_op(invalid_op),
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="float18_div_translation" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+float18_div_translation YourInstanceName (
+    .a(a), // Bus [17 : 0] 
+    .b(b), // Bus [17 : 0] 
+    .operation_nd(operation_nd),
+    .operation_rfd(operation_rfd),
+    .clk(clk),
+    .result(result), // Bus [17 : 0] 
+    .underflow(underflow),
+    .overflow(overflow),
+    .invalid_op(invalid_op),
+    .divide_by_zero(divide_by_zero),
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="fifo_translation" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+fifo_translation YourInstanceName (
+    .clk(clk),
+    .din(din), // Bus [167 : 0] 
+    .rd_en(rd_en),
+    .rst(rst),
+    .wr_en(wr_en),
+    .dout(dout), // Bus [167 : 0] 
+    .empty(empty),
+    .full(full),
+    .prog_empty(prog_empty),
+    .prog_full(prog_full),
+    .valid(valid),
+    .wr_ack(wr_ack));
+
+ 
+		</Template>
+		<Template label="float18_mult_translation" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+float18_mult_translation YourInstanceName (
+    .a(a), // Bus [17 : 0] 
+    .b(b), // Bus [17 : 0] 
+    .operation_nd(operation_nd),
+    .operation_rfd(operation_rfd),
+    .clk(clk),
+    .result(result), // Bus [17 : 0] 
+    .underflow(underflow),
+    .overflow(overflow),
+    .invalid_op(invalid_op),
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="dist_ram_2port_1clk_translation" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+dist_ram_2port_1clk_translation YourInstanceName (
+    .a(a), // Bus [3 : 0] 
+    .d(d), // Bus [71 : 0] 
+    .dpra(dpra), // Bus [3 : 0] 
+    .clk(clk),
+    .we(we),
+    .spo(spo), // Bus [71 : 0] 
+    .dpo(dpo)); // Bus [71 : 0] 
+
+ 
+		</Template>
+		<Template label="fifo_linecreator" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+fifo_linecreator YourInstanceName (
+    .clk(clk),
+    .din(din), // Bus [149 : 0] 
+    .rd_en(rd_en),
+    .rst(rst),
+    .wr_en(wr_en),
+    .dout(dout), // Bus [149 : 0] 
+    .empty(empty),
+    .full(full),
+    .prog_empty(prog_empty),
+    .prog_full(prog_full),
+    .valid(valid),
+    .wr_ack(wr_ack));
+
+ 
+		</Template>
+		<Template label="float18_fix_conv_y" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+float18_fix_conv_y YourInstanceName (
+    .a(a), // Bus [17 : 0] 
+    .operation_nd(operation_nd),
+    .operation_rfd(operation_rfd),
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [8 : 0] 
+    .overflow(overflow),
+    .invalid_op(invalid_op),
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="float18_fix_conv_x" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+float18_fix_conv_x YourInstanceName (
+    .a(a), // Bus [17 : 0] 
+    .operation_nd(operation_nd),
+    .operation_rfd(operation_rfd),
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [9 : 0] 
+    .overflow(overflow),
+    .invalid_op(invalid_op),
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="buffer_RAM" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+buffer_RAM YourInstanceName (
+    .clka(clka),
+    .dina(dina), // Bus [23 : 0] 
+    .addra(addra), // Bus [16 : 0] 
+    .wea(wea), // Bus [0 : 0] 
+    .clkb(clkb),
+    .addrb(addrb), // Bus [16 : 0] 
+    .doutb(doutb)); // Bus [23 : 0] 
+
+ 
+		</Template>
+		<Template label="tri_area_fifo" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+tri_area_fifo YourInstanceName (
+    .clk(clk),
+    .din(din), // Bus [16 : 0] 
+    .rd_en(rd_en),
+    .srst(srst),
+    .wr_en(wr_en),
+    .dout(dout), // Bus [16 : 0] 
+    .empty(empty),
+    .full(full),
+    .prog_empty(prog_empty),
+    .prog_full(prog_full),
+    .valid(valid),
+    .wr_ack(wr_ack));
+
+ 
+		</Template>
+		<Template label="tri_raster_fifo" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+tri_raster_fifo YourInstanceName (
+    .clk(clk),
+    .din(din), // Bus [96 : 0] 
+    .rd_en(rd_en),
+    .srst(srst),
+    .wr_en(wr_en),
+    .dout(dout), // Bus [96 : 0] 
+    .empty(empty),
+    .full(full),
+    .prog_empty(prog_empty),
+    .prog_full(prog_full),
+    .valid(valid),
+    .wr_ack(wr_ack));
+
+ 
+		</Template>
+		<Template label="Z_buffer" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+Z_buffer YourInstanceName (
+    .clka(clka),
+    .dina(dina), // Bus [15 : 0] 
+    .addra(addra), // Bus [16 : 0] 
+    .wea(wea), // Bus [0 : 0] 
+    .clkb(clkb),
+    .addrb(addrb), // Bus [16 : 0] 
+    .doutb(doutb)); // Bus [15 : 0] 
+
+ 
+		</Template>
+		<Template label="vertex_color_fifo" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+vertex_color_fifo YourInstanceName (
+    .clk(clk),
+    .din(din), // Bus [298 : 0] 
+    .rd_en(rd_en),
+    .srst(srst),
+    .wr_en(wr_en),
+    .dout(dout), // Bus [298 : 0] 
+    .empty(empty),
+    .full(full),
+    .prog_empty(prog_empty),
+    .prog_full(prog_full),
+    .valid(valid),
+    .wr_ack(wr_ack));
+
+ 
+		</Template>
+		<Template label="recip" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+recip YourInstanceName (
+    .clk(clk),
+    .rfd(rfd),
+    .dividend(dividend), // Bus [1 : 0] 
+    .divisor(divisor), // Bus [16 : 0] 
+    .quotient(quotient), // Bus [1 : 0] 
+    .fractional(fractional)); // Bus [19 : 0] 
+
+ 
+		</Template>
+		<Template label="ila1" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+ila1 instance_name (
+    .CONTROL(CONTROL),
+    .CLK(CLK),
+    .TRIG0(TRIG0),
+    .TRIG1(TRIG1),
+    .TRIG2(TRIG2),
+    .TRIG3(TRIG3)
+);
+
+ 
+		</Template>
+		<Template label="icon1" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+icon1 instance_name (
+    .CONTROL0(CONTROL0),
+    .CONTROL1(CONTROL1),
+    .CONTROL2(CONTROL2)
+);
+
+ 
+		</Template>
+		<Template label="icon2" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+icon2 instance_name (
+    .CONTROL0(CONTROL0)
+);
+
+ 
+		</Template>
+		<Template label="ila2" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+ila2 instance_name (
+    .CONTROL(CONTROL),
+    .CLK(CLK),
+    .TRIG0(TRIG0),
+    .TRIG1(TRIG1),
+    .TRIG2(TRIG2),
+    .TRIG3(TRIG3),
+    .TRIG4(TRIG4),
+    .TRIG5(TRIG5)
+);
+
+ 
+		</Template>
+		<Template label="ila3" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+ila3 instance_name (
+    .CONTROL(CONTROL),
+    .CLK(CLK),
+    .TRIG0(TRIG0),
+    .TRIG1(TRIG1),
+    .TRIG2(TRIG2),
+    .TRIG3(TRIG3),
+    .TRIG4(TRIG4),
+    .TRIG5(TRIG5)
+);
+
+ 
+		</Template>
+		<Template label="ila4" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+ila4 instance_name (
+    .CONTROL(CONTROL),
+    .CLK(CLK),
+    .TRIG0(TRIG0),
+    .TRIG1(TRIG1)
+);
+
+ 
+		</Template>
+		<Template label="float18_fix_conv_z" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+float18_fix_conv_z YourInstanceName (
+    .a(a), // Bus [17 : 0] 
+    .operation_nd(operation_nd),
+    .operation_rfd(operation_rfd),
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [12 : 0] 
+    .overflow(overflow),
+    .invalid_op(invalid_op),
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="tri_texture_fifo" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+tri_texture_fifo YourInstanceName (
+    .clk(clk),
+    .din(din), // Bus [56 : 0] 
+    .rd_en(rd_en),
+    .srst(srst),
+    .wr_en(wr_en),
+    .dout(dout), // Bus [56 : 0] 
+    .empty(empty),
+    .full(full),
+    .prog_empty(prog_empty),
+    .prog_full(prog_full),
+    .valid(valid),
+    .wr_ack(wr_ack));
+
+ 
+		</Template>
+		<Template label="Tex_buffer" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+Tex_buffer YourInstanceName (
+    .clka(clka),
+    .dina(dina), // Bus [23 : 0] 
+    .addra(addra), // Bus [11 : 0] 
+    .wea(wea), // Bus [0 : 0] 
+    .clkb(clkb),
+    .addrb(addrb), // Bus [11 : 0] 
+    .doutb(doutb)); // Bus [23 : 0] 
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="float32to18model" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component float32to18model
+    port (
+    a: IN std_logic_VECTOR(31 downto 0);
+    operation_nd: IN std_logic;
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    result: OUT std_logic_VECTOR(17 downto 0);
+    underflow: OUT std_logic;
+    overflow: OUT std_logic;
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : float32to18model
+        port map (
+            a =&gt; a,
+            operation_nd =&gt; operation_nd,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            result =&gt; result,
+            underflow =&gt; underflow,
+            overflow =&gt; overflow,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="float18_add_translation" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component float18_add_translation
+    port (
+    a: IN std_logic_VECTOR(17 downto 0);
+    b: IN std_logic_VECTOR(17 downto 0);
+    operation_nd: IN std_logic;
+    operation_rfd: OUT std_logic;
+    clk: IN std_logic;
+    result: OUT std_logic_VECTOR(17 downto 0);
+    underflow: OUT std_logic;
+    overflow: OUT std_logic;
+    invalid_op: OUT std_logic;
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : float18_add_translation
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            operation_nd =&gt; operation_nd,
+            operation_rfd =&gt; operation_rfd,
+            clk =&gt; clk,
+            result =&gt; result,
+            underflow =&gt; underflow,
+            overflow =&gt; overflow,
+            invalid_op =&gt; invalid_op,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="float18_div_translation" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component float18_div_translation
+    port (
+    a: IN std_logic_VECTOR(17 downto 0);
+    b: IN std_logic_VECTOR(17 downto 0);
+    operation_nd: IN std_logic;
+    operation_rfd: OUT std_logic;
+    clk: IN std_logic;
+    result: OUT std_logic_VECTOR(17 downto 0);
+    underflow: OUT std_logic;
+    overflow: OUT std_logic;
+    invalid_op: OUT std_logic;
+    divide_by_zero: OUT std_logic;
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : float18_div_translation
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            operation_nd =&gt; operation_nd,
+            operation_rfd =&gt; operation_rfd,
+            clk =&gt; clk,
+            result =&gt; result,
+            underflow =&gt; underflow,
+            overflow =&gt; overflow,
+            invalid_op =&gt; invalid_op,
+            divide_by_zero =&gt; divide_by_zero,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="fifo_translation" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component fifo_translation
+    port (
+    clk: IN std_logic;
+    din: IN std_logic_VECTOR(167 downto 0);
+    rd_en: IN std_logic;
+    rst: IN std_logic;
+    wr_en: IN std_logic;
+    dout: OUT std_logic_VECTOR(167 downto 0);
+    empty: OUT std_logic;
+    full: OUT std_logic;
+    prog_empty: OUT std_logic;
+    prog_full: OUT std_logic;
+    valid: OUT std_logic;
+    wr_ack: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : fifo_translation
+        port map (
+            clk =&gt; clk,
+            din =&gt; din,
+            rd_en =&gt; rd_en,
+            rst =&gt; rst,
+            wr_en =&gt; wr_en,
+            dout =&gt; dout,
+            empty =&gt; empty,
+            full =&gt; full,
+            prog_empty =&gt; prog_empty,
+            prog_full =&gt; prog_full,
+            valid =&gt; valid,
+            wr_ack =&gt; wr_ack);
+ 
+		</Template>
+		<Template label="float18_mult_translation" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component float18_mult_translation
+    port (
+    a: IN std_logic_VECTOR(17 downto 0);
+    b: IN std_logic_VECTOR(17 downto 0);
+    operation_nd: IN std_logic;
+    operation_rfd: OUT std_logic;
+    clk: IN std_logic;
+    result: OUT std_logic_VECTOR(17 downto 0);
+    underflow: OUT std_logic;
+    overflow: OUT std_logic;
+    invalid_op: OUT std_logic;
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : float18_mult_translation
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            operation_nd =&gt; operation_nd,
+            operation_rfd =&gt; operation_rfd,
+            clk =&gt; clk,
+            result =&gt; result,
+            underflow =&gt; underflow,
+            overflow =&gt; overflow,
+            invalid_op =&gt; invalid_op,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="dist_ram_2port_1clk_translation" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component dist_ram_2port_1clk_translation
+    port (
+    a: IN std_logic_VECTOR(3 downto 0);
+    d: IN std_logic_VECTOR(71 downto 0);
+    dpra: IN std_logic_VECTOR(3 downto 0);
+    clk: IN std_logic;
+    we: IN std_logic;
+    spo: OUT std_logic_VECTOR(71 downto 0);
+    dpo: OUT std_logic_VECTOR(71 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : dist_ram_2port_1clk_translation
+        port map (
+            a =&gt; a,
+            d =&gt; d,
+            dpra =&gt; dpra,
+            clk =&gt; clk,
+            we =&gt; we,
+            spo =&gt; spo,
+            dpo =&gt; dpo);
+ 
+		</Template>
+		<Template label="fifo_linecreator" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component fifo_linecreator
+    port (
+    clk: IN std_logic;
+    din: IN std_logic_VECTOR(149 downto 0);
+    rd_en: IN std_logic;
+    rst: IN std_logic;
+    wr_en: IN std_logic;
+    dout: OUT std_logic_VECTOR(149 downto 0);
+    empty: OUT std_logic;
+    full: OUT std_logic;
+    prog_empty: OUT std_logic;
+    prog_full: OUT std_logic;
+    valid: OUT std_logic;
+    wr_ack: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : fifo_linecreator
+        port map (
+            clk =&gt; clk,
+            din =&gt; din,
+            rd_en =&gt; rd_en,
+            rst =&gt; rst,
+            wr_en =&gt; wr_en,
+            dout =&gt; dout,
+            empty =&gt; empty,
+            full =&gt; full,
+            prog_empty =&gt; prog_empty,
+            prog_full =&gt; prog_full,
+            valid =&gt; valid,
+            wr_ack =&gt; wr_ack);
+ 
+		</Template>
+		<Template label="float18_fix_conv_y" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component float18_fix_conv_y
+    port (
+    a: IN std_logic_VECTOR(17 downto 0);
+    operation_nd: IN std_logic;
+    operation_rfd: OUT std_logic;
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(8 downto 0);
+    overflow: OUT std_logic;
+    invalid_op: OUT std_logic;
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : float18_fix_conv_y
+        port map (
+            a =&gt; a,
+            operation_nd =&gt; operation_nd,
+            operation_rfd =&gt; operation_rfd,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            overflow =&gt; overflow,
+            invalid_op =&gt; invalid_op,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="float18_fix_conv_x" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component float18_fix_conv_x
+    port (
+    a: IN std_logic_VECTOR(17 downto 0);
+    operation_nd: IN std_logic;
+    operation_rfd: OUT std_logic;
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(9 downto 0);
+    overflow: OUT std_logic;
+    invalid_op: OUT std_logic;
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : float18_fix_conv_x
+        port map (
+            a =&gt; a,
+            operation_nd =&gt; operation_nd,
+            operation_rfd =&gt; operation_rfd,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            overflow =&gt; overflow,
+            invalid_op =&gt; invalid_op,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="buffer_RAM" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component buffer_RAM
+    port (
+    clka: IN std_logic;
+    dina: IN std_logic_VECTOR(23 downto 0);
+    addra: IN std_logic_VECTOR(16 downto 0);
+    wea: IN std_logic_VECTOR(0 downto 0);
+    clkb: IN std_logic;
+    addrb: IN std_logic_VECTOR(16 downto 0);
+    doutb: OUT std_logic_VECTOR(23 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : buffer_RAM
+        port map (
+            clka =&gt; clka,
+            dina =&gt; dina,
+            addra =&gt; addra,
+            wea =&gt; wea,
+            clkb =&gt; clkb,
+            addrb =&gt; addrb,
+            doutb =&gt; doutb);
+ 
+		</Template>
+		<Template label="tri_area_fifo" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component tri_area_fifo
+    port (
+    clk: IN std_logic;
+    din: IN std_logic_VECTOR(16 downto 0);
+    rd_en: IN std_logic;
+    srst: IN std_logic;
+    wr_en: IN std_logic;
+    dout: OUT std_logic_VECTOR(16 downto 0);
+    empty: OUT std_logic;
+    full: OUT std_logic;
+    prog_empty: OUT std_logic;
+    prog_full: OUT std_logic;
+    valid: OUT std_logic;
+    wr_ack: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : tri_area_fifo
+        port map (
+            clk =&gt; clk,
+            din =&gt; din,
+            rd_en =&gt; rd_en,
+            srst =&gt; srst,
+            wr_en =&gt; wr_en,
+            dout =&gt; dout,
+            empty =&gt; empty,
+            full =&gt; full,
+            prog_empty =&gt; prog_empty,
+            prog_full =&gt; prog_full,
+            valid =&gt; valid,
+            wr_ack =&gt; wr_ack);
+ 
+		</Template>
+		<Template label="tri_raster_fifo" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component tri_raster_fifo
+    port (
+    clk: IN std_logic;
+    din: IN std_logic_VECTOR(96 downto 0);
+    rd_en: IN std_logic;
+    srst: IN std_logic;
+    wr_en: IN std_logic;
+    dout: OUT std_logic_VECTOR(96 downto 0);
+    empty: OUT std_logic;
+    full: OUT std_logic;
+    prog_empty: OUT std_logic;
+    prog_full: OUT std_logic;
+    valid: OUT std_logic;
+    wr_ack: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : tri_raster_fifo
+        port map (
+            clk =&gt; clk,
+            din =&gt; din,
+            rd_en =&gt; rd_en,
+            srst =&gt; srst,
+            wr_en =&gt; wr_en,
+            dout =&gt; dout,
+            empty =&gt; empty,
+            full =&gt; full,
+            prog_empty =&gt; prog_empty,
+            prog_full =&gt; prog_full,
+            valid =&gt; valid,
+            wr_ack =&gt; wr_ack);
+ 
+		</Template>
+		<Template label="Z_buffer" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component Z_buffer
+    port (
+    clka: IN std_logic;
+    dina: IN std_logic_VECTOR(15 downto 0);
+    addra: IN std_logic_VECTOR(16 downto 0);
+    wea: IN std_logic_VECTOR(0 downto 0);
+    clkb: IN std_logic;
+    addrb: IN std_logic_VECTOR(16 downto 0);
+    doutb: OUT std_logic_VECTOR(15 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : Z_buffer
+        port map (
+            clka =&gt; clka,
+            dina =&gt; dina,
+            addra =&gt; addra,
+            wea =&gt; wea,
+            clkb =&gt; clkb,
+            addrb =&gt; addrb,
+            doutb =&gt; doutb);
+ 
+		</Template>
+		<Template label="vertex_color_fifo" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component vertex_color_fifo
+    port (
+    clk: IN std_logic;
+    din: IN std_logic_VECTOR(298 downto 0);
+    rd_en: IN std_logic;
+    srst: IN std_logic;
+    wr_en: IN std_logic;
+    dout: OUT std_logic_VECTOR(298 downto 0);
+    empty: OUT std_logic;
+    full: OUT std_logic;
+    prog_empty: OUT std_logic;
+    prog_full: OUT std_logic;
+    valid: OUT std_logic;
+    wr_ack: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : vertex_color_fifo
+        port map (
+            clk =&gt; clk,
+            din =&gt; din,
+            rd_en =&gt; rd_en,
+            srst =&gt; srst,
+            wr_en =&gt; wr_en,
+            dout =&gt; dout,
+            empty =&gt; empty,
+            full =&gt; full,
+            prog_empty =&gt; prog_empty,
+            prog_full =&gt; prog_full,
+            valid =&gt; valid,
+            wr_ack =&gt; wr_ack);
+ 
+		</Template>
+		<Template label="recip" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component recip
+    port (
+    clk: IN std_logic;
+    rfd: OUT std_logic;
+    dividend: IN std_logic_VECTOR(1 downto 0);
+    divisor: IN std_logic_VECTOR(16 downto 0);
+    quotient: OUT std_logic_VECTOR(1 downto 0);
+    fractional: OUT std_logic_VECTOR(19 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : recip
+        port map (
+            clk =&gt; clk,
+            rfd =&gt; rfd,
+            dividend =&gt; dividend,
+            divisor =&gt; divisor,
+            quotient =&gt; quotient,
+            fractional =&gt; fractional);
+ 
+		</Template>
+		<Template label="ila1" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component ila1
+  PORT (
+    CONTROL : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);
+    CLK : IN STD_LOGIC;
+    TRIG0 : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    TRIG1 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    TRIG2 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    TRIG3 : IN STD_LOGIC_VECTOR(7 DOWNTO 0));
+
+end component;
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+
+your_instance_name : ila1
+  port map (
+    CONTROL =&gt; CONTROL,
+    CLK =&gt; CLK,
+    TRIG0 =&gt; TRIG0,
+    TRIG1 =&gt; TRIG1,
+    TRIG2 =&gt; TRIG2,
+    TRIG3 =&gt; TRIG3);
+
+ 
+		</Template>
+		<Template label="icon1" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component icon1
+  PORT (
+    CONTROL0 : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);
+    CONTROL1 : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);
+    CONTROL2 : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0));
+
+end component;
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+
+your_instance_name : icon1
+  port map (
+    CONTROL0 =&gt; CONTROL0,
+    CONTROL1 =&gt; CONTROL1,
+    CONTROL2 =&gt; CONTROL2);
+
+ 
+		</Template>
+		<Template label="icon2" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component icon2
+  PORT (
+    CONTROL0 : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0));
+
+end component;
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+
+your_instance_name : icon2
+  port map (
+    CONTROL0 =&gt; CONTROL0);
+
+ 
+		</Template>
+		<Template label="ila2" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component ila2
+  PORT (
+    CONTROL : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);
+    CLK : IN STD_LOGIC;
+    TRIG0 : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    TRIG1 : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    TRIG2 : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    TRIG3 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    TRIG4 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    TRIG5 : IN STD_LOGIC_VECTOR(7 DOWNTO 0));
+
+end component;
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+
+your_instance_name : ila2
+  port map (
+    CONTROL =&gt; CONTROL,
+    CLK =&gt; CLK,
+    TRIG0 =&gt; TRIG0,
+    TRIG1 =&gt; TRIG1,
+    TRIG2 =&gt; TRIG2,
+    TRIG3 =&gt; TRIG3,
+    TRIG4 =&gt; TRIG4,
+    TRIG5 =&gt; TRIG5);
+
+ 
+		</Template>
+		<Template label="ila3" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component ila3
+  PORT (
+    CONTROL : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);
+    CLK : IN STD_LOGIC;
+    TRIG0 : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    TRIG1 : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    TRIG2 : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    TRIG3 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    TRIG4 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    TRIG5 : IN STD_LOGIC_VECTOR(7 DOWNTO 0));
+
+end component;
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+
+your_instance_name : ila3
+  port map (
+    CONTROL =&gt; CONTROL,
+    CLK =&gt; CLK,
+    TRIG0 =&gt; TRIG0,
+    TRIG1 =&gt; TRIG1,
+    TRIG2 =&gt; TRIG2,
+    TRIG3 =&gt; TRIG3,
+    TRIG4 =&gt; TRIG4,
+    TRIG5 =&gt; TRIG5);
+
+ 
+		</Template>
+		<Template label="ila4" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component ila4
+  PORT (
+    CONTROL : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);
+    CLK : IN STD_LOGIC;
+    TRIG0 : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    TRIG1 : IN STD_LOGIC_VECTOR(7 DOWNTO 0));
+
+end component;
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+
+your_instance_name : ila4
+  port map (
+    CONTROL =&gt; CONTROL,
+    CLK =&gt; CLK,
+    TRIG0 =&gt; TRIG0,
+    TRIG1 =&gt; TRIG1);
+
+ 
+		</Template>
+		<Template label="float18_fix_conv_z" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component float18_fix_conv_z
+    port (
+    a: IN std_logic_VECTOR(17 downto 0);
+    operation_nd: IN std_logic;
+    operation_rfd: OUT std_logic;
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(12 downto 0);
+    overflow: OUT std_logic;
+    invalid_op: OUT std_logic;
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : float18_fix_conv_z
+        port map (
+            a =&gt; a,
+            operation_nd =&gt; operation_nd,
+            operation_rfd =&gt; operation_rfd,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            overflow =&gt; overflow,
+            invalid_op =&gt; invalid_op,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="tri_texture_fifo" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component tri_texture_fifo
+    port (
+    clk: IN std_logic;
+    din: IN std_logic_VECTOR(56 downto 0);
+    rd_en: IN std_logic;
+    srst: IN std_logic;
+    wr_en: IN std_logic;
+    dout: OUT std_logic_VECTOR(56 downto 0);
+    empty: OUT std_logic;
+    full: OUT std_logic;
+    prog_empty: OUT std_logic;
+    prog_full: OUT std_logic;
+    valid: OUT std_logic;
+    wr_ack: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : tri_texture_fifo
+        port map (
+            clk =&gt; clk,
+            din =&gt; din,
+            rd_en =&gt; rd_en,
+            srst =&gt; srst,
+            wr_en =&gt; wr_en,
+            dout =&gt; dout,
+            empty =&gt; empty,
+            full =&gt; full,
+            prog_empty =&gt; prog_empty,
+            prog_full =&gt; prog_full,
+            valid =&gt; valid,
+            wr_ack =&gt; wr_ack);
+ 
+		</Template>
+		<Template label="Tex_buffer" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component Tex_buffer
+    port (
+    clka: IN std_logic;
+    dina: IN std_logic_VECTOR(23 downto 0);
+    addra: IN std_logic_VECTOR(11 downto 0);
+    wea: IN std_logic_VECTOR(0 downto 0);
+    clkb: IN std_logic;
+    addrb: IN std_logic_VECTOR(11 downto 0);
+    doutb: OUT std_logic_VECTOR(23 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : Tex_buffer
+        port map (
+            clka =&gt; clka,
+            dina =&gt; dina,
+            addra =&gt; addra,
+            wea =&gt; wea,
+            clkb =&gt; clkb,
+            addrb =&gt; addrb,
+            doutb =&gt; doutb);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

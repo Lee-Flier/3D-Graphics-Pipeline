@@ -1,0 +1,6 @@
+CS% CS% ChipScope Runtime Server Version 10.1.03 (Build 10103.8.234.834) - Compiled Aug 21 2008 14:25:59
+Opened server at port: 50001
+
+cs_server:Opening client connection from 127.0.0.1 on port 8154
+CS% 
+cs_server:Closing client connection from 127.0.0.1 on port 8154

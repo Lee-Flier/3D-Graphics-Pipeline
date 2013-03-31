@@ -1,0 +1,36 @@
+<stderr> No match for product = [18]
+<stderr> No match for product = [17]
+INFO:ChipScope Pro Analyzer    Version: 10.1.03 K.39 (Build 10103.8.234.834)
+
+INFO:Registered product: ChipScope Pro, Registration ID: 1A9YALW3EKPPXTUBN6WP0KD3M
+COMMAND:open_cable
+INFO:Started ChipScope host (localhost:50001)
+INFO:Opened socket connection: localhost 50001 localhost/127.0.0.1
+INFO:Trying to open Xilinx Parallel Cable on port LPT1
+INFO:Trying to open Xilinx Parallel Cable on port LPT2
+INFO:Trying to open Xilinx Parallel Cable on port LPT3
+INFO:Trying to open Xilinx Parallel Cable on port LPT4
+INFO:Trying to open Xilinx Platform USB Cable on port USB2
+ERROR:Failed to detect cable.
+Try to open a specific cable from the 'JTAG Chain' menu.
+COMMAND:open_cable
+INFO:Started ChipScope host (localhost:50001)
+INFO:Opened socket connection: localhost 50001 localhost/127.0.0.1
+INFO:Trying to open Xilinx Parallel Cable on port LPT1
+INFO:Trying to open Xilinx Parallel Cable on port LPT2
+INFO:Trying to open Xilinx Parallel Cable on port LPT3
+INFO:Trying to open Xilinx Parallel Cable on port LPT4
+INFO:Trying to open Xilinx Platform USB Cable on port USB2
+ERROR:Failed to detect cable.
+Try to open a specific cable from the 'JTAG Chain' menu.
+COMMAND:open_cable
+INFO:Started ChipScope host (localhost:50001)
+INFO:Opened socket connection: localhost 50001 localhost/127.0.0.1
+INFO:Trying to open Xilinx Parallel Cable on port LPT1
+INFO:Trying to open Xilinx Parallel Cable on port LPT2
+INFO:Trying to open Xilinx Parallel Cable on port LPT3
+INFO:Trying to open Xilinx Parallel Cable on port LPT4
+INFO:Trying to open Xilinx Platform USB Cable on port USB2
+ERROR:Failed to detect cable.
+Try to open a specific cable from the 'JTAG Chain' menu.
+ERROR:Socket communication not open.

@@ -1,0 +1,14 @@
+xst -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -ifn "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.xst" -ofn "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.syr"
+ngdbuild -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -dd _ngo  -nt timestamp -i -bm "edkBmmFile.bmm" -p xc5vlx110t-ff1136-1 "top.ngc" top.ngd
+map -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o top_map.ncd top.ngd top.pcf
+par -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -v 3 -s 1 -xml top top.ncd -o top.twr top.pcf -ucf cpu_gpu.ucf
+bitgen -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -ifn "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.xst" -ofn "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.syr"
+ngdbuild -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -dd _ngo  -nt timestamp -i -bm "edkBmmFile.bmm" -p xc5vlx110t-ff1136-1 "top.ngc" top.ngd
+xst -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -ifn "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.xst" -ofn "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.syr"
+ngdbuild -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -dd _ngo  -nt timestamp -i -bm "edkBmmFile.bmm" -p xc5vlx110t-ff1136-1 "top.ngc" top.ngd
+map -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o top_map.ncd top.ngd top.pcf
+par -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -v 3 -s 1 -xml top top.ncd -o top.twr top.pcf -ucf cpu_gpu.ucf
+bitgen -ise "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_test_20110703.ise" -intstyle ise -f top.ut top.ncd

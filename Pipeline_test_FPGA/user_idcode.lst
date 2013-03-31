@@ -1,0 +1,33 @@
+# Format for JTAG IDCODE list:
+# 
+# Comments start with '#' and continues to end-of-line.
+# 
+# One entry per line.
+# An entry represents a device family or an individual device.
+#
+# There are 5 fields per line, separated by a comma:
+#  1) JTAG IDCODE in binary. 'x' matches a '0' or a '1'.
+#     '_' characters are not significant, 
+#     but helps readability for humans.
+#     Manufacturer code is in the right-most bits.
+#
+#  2) JTAG instruction register length, a decimal value.
+#  3) Use value '0'.
+#  4) Use value '0'. 
+#  5) Name of device or device family
+#
+#  When matching a device IDCODE (which is a binary value
+#  without any 'x') against entries in this file:
+#    - '_' are not significant.
+#    - assume entries are sorted alphabetically. '0' comes before '1', 
+#      which comes before 'x'.
+#    - Matching the IDCODE is done from top to bottom in the sorted
+#      list until there is a match.
+#
+#  The order of entries in this file is not significant. The program
+#  which reads it will sort it alphabetically.
+#
+# Example of entries:
+xxxx_0000_0000_0001_xxxx_0000_0010_1010,4,0,0,DeviceName1
+xxxx_0000_0000_0101_xxxx_0000_0010_1010,4,0,0,DeviceName2
+ 

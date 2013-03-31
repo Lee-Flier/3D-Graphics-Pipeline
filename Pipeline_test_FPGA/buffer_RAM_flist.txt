@@ -1,0 +1,12 @@
+# Output products list for <buffer_RAM>
+buffer_RAM.asy
+buffer_RAM.ngc
+buffer_RAM.sym
+buffer_RAM.v
+buffer_RAM.veo
+buffer_RAM.vhd
+buffer_RAM.vho
+buffer_RAM.xco
+buffer_RAM_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+buffer_RAM_flist.txt
+buffer_RAM_xmdf.tcl

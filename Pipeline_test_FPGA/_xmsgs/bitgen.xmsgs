@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Bitgen" num="40" delta="unknown" >Replacing &quot;<arg fmt="%s" index="1">Auto</arg>&quot; with &quot;<arg fmt="%s" index="2">2</arg>&quot; for option &quot;<arg fmt="%s" index="3">Match_cycle</arg>&quot;.  Most commonly, bitgen has determined and will use a specific value instead of the generic command-line value of &quot;Auto&quot;.  Alternately, this message appears if the same option is specified multiple times on the command-line.  In this case, the option listed last will be used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="unknown" >The signal &lt;<arg fmt="%s" index="1">dvi_reset_b_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="unknown" >The signal &lt;<arg fmt="%s" index="1">fpga_0_IIC_EEPROM_Sda_pin_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="unknown" >The signal &lt;<arg fmt="%s" index="1">fpga_0_IIC_EEPROM_Scl_pin_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1269" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The Q1 output pin of IFF is not used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1273" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1269" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[4].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The Q1 output pin of IFF is not used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1273" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[4].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1269" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The Q1 output pin of IFF is not used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1273" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1269" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The Q1 output pin of IFF is not used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1273" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1269" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[5].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The Q1 output pin of IFF is not used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1273" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[5].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1269" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The Q1 output pin of IFF is not used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1273" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1269" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The Q1 output pin of IFF is not used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1273" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1269" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[6].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The Q1 output pin of IFF is not used.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1273" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[6].u_iob_dqs/u_iddr_dq_ce</arg>&gt;:&lt;<arg fmt="%s" index="2">ILOGIC_IFF</arg>&gt;.  The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_u_red10_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_z_buffer/Mmult_u_z10</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_z_buffer/Mmult_v_z20</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_v_Ty20_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1503" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_rast/Mmult_v_param_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_u_Tx10_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1503" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_rast/Mmult_tmpex00_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_u_blue10_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1503" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_rast/Mmult_tmpex01_mult0000</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1503" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_rast/Mmult_tmpex10_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_v_red20_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_u_Ty10_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1503" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_rast/Mmult_tmpex11_mult0000</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1503" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_rast/Mmult_tmpex20_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1503" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_rast/Mmult_tmpex21_mult0000</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_z_buffer/Maddsub_addry_in</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_u_green10_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_v_green20_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1503" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_rast/Mmult_u_param_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_v_Tx20_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1507" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">test/raster_sys_0/inst_tri_vertex_color/Mmult_v_blue20_mult0001</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND to save power.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="unknown" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ProtoComp1980.PULL</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="unknown" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ProtoComp1980.PULL.1</arg> is set but the tri state is not configured. 
+</msg>
+
+</messages>
+

@@ -1,0 +1,15 @@
+Release 10.1.03 - par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Thu Sep 22 20:17:37 2011
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 3 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   dvi_reset_b_IBUF
+   fpga_0_IIC_EEPROM_Scl_pin_IBUF
+   fpga_0_IIC_EEPROM_Sda_pin_IBUF
+
+

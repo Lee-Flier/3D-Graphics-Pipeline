@@ -1,0 +1,168 @@
+WARNING:PhysDesignRules:367 - The signal <dvi_reset_b_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <fpga_0_IIC_EEPROM_Sda_pin_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <fpga_0_IIC_EEPROM_Scl_pin_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1
+   output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin
+   is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not
+   configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[4].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1
+   output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[4].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin
+   is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not
+   configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1
+   output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin
+   is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not
+   configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1
+   output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin
+   is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not
+   configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[5].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1
+   output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[5].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin
+   is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not
+   configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1
+   output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin
+   is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not
+   configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1
+   output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin
+   is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not
+   configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[6].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1
+   output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_
+   if_0/u_phy_io_0/gen_dqs[6].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin
+   is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not
+   configured.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_u_red10_mult0001>:<DSP48
+   E_DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should
+   be tied GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_z_buffer/Mmult_u_z10>:<DSP48E_DSP48E>. 
+   When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND
+   to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_z_buffer/Mmult_v_z20>:<DSP48E_DSP48E>. 
+   When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied GND
+   to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_v_Ty20_mult0001>:<DSP48E
+   _DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should
+   be tied GND to save power.
+INFO:PhysDesignRules:1503 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_rast/Mmult_v_param_mult0001>:<DSP48E_DSP48E
+   >.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_u_Tx10_mult0001>:<DSP48E
+   _DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should
+   be tied GND to save power.
+INFO:PhysDesignRules:1503 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_rast/Mmult_tmpex00_mult0001>:<DSP48E_DSP48E
+   >.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_u_blue10_mult0001>:<DSP4
+   8E_DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins
+   should be tied GND to save power.
+INFO:PhysDesignRules:1503 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_rast/Mmult_tmpex01_mult0000>:<DSP48E_DSP48E
+   >.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1503 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_rast/Mmult_tmpex10_mult0001>:<DSP48E_DSP48E
+   >.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_v_red20_mult0001>:<DSP48
+   E_DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should
+   be tied GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_u_Ty10_mult0001>:<DSP48E
+   _DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should
+   be tied GND to save power.
+INFO:PhysDesignRules:1503 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_rast/Mmult_tmpex11_mult0000>:<DSP48E_DSP48E
+   >.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1503 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_rast/Mmult_tmpex20_mult0001>:<DSP48E_DSP48E
+   >.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1503 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_rast/Mmult_tmpex21_mult0000>:<DSP48E_DSP48E
+   >.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_z_buffer/Maddsub_addry_in>:<DSP48E_DSP48E>.
+    When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_u_green10_mult0001>:<DSP
+   48E_DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins
+   should be tied GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_v_green20_mult0001>:<DSP
+   48E_DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins
+   should be tied GND to save power.
+INFO:PhysDesignRules:1503 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_rast/Mmult_u_param_mult0001>:<DSP48E_DSP48E
+   >.  When DSP48E attribute AREG is set 0 the CEA1 and CEA2 pins should be tied
+   GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_v_Tx20_mult0001>:<DSP48E
+   _DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins should
+   be tied GND to save power.
+INFO:PhysDesignRules:1507 - Dangling pins on
+   block:<test/raster_sys_0/inst_tri_vertex_color/Mmult_v_blue20_mult0001>:<DSP4
+   8E_DSP48E>.  When DSP48E attribute BREG is set 0 the CEB1 and CEB2 pins
+   should be tied GND to save power.
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ProtoComp1980.PULL is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ProtoComp1980.PULL.1 is set but the tri state is not configured. 
+DRC detected 0 errors and 21 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

@@ -1,0 +1,1 @@
+ -p virtex5 -lang vhdl   TestApp_Memory/executable.elf -s mti -X C:/Xilinx/10.1/ISE/smartmodel/nt/installed_nt/ -E C:/XilinxProcessorIPLib/pcores/

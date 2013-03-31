@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="unknown" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">DCM_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clk_100mhz1 = PERIOD &quot;clk_100mhz1&quot; TS_sys_clk_pin HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="unknown" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">DCM_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKDV</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_test_raster_sys_0_vga_clk1 = PERIOD &quot;test_raster_sys_0_vga_clk1&quot; TS_sys_clk_pin * 4 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="unknown" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_100mhz1</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_100mhz1</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/Using_PLL0.PLL0_INST/PLL_INST/Using_PLL_ADV.PLL_ADV_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_Inst_cpu_0_clock_generator_0_clock_generator_0_PLL0_CLK_OUT_0_ = PERIOD &quot;Inst_cpu_0_clock_generator_0_clock_generator_0_PLL0_CLK_OUT_0_&quot; TS_clk_100mhz1 / 2 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="unknown" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_100mhz1</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_100mhz1</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/Using_PLL0.PLL0_INST/PLL_INST/Using_PLL_ADV.PLL_ADV_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_Inst_cpu_0_clock_generator_0_clock_generator_0_PLL0_CLK_OUT_1_ = PERIOD &quot;Inst_cpu_0_clock_generator_0_clock_generator_0_PLL0_CLK_OUT_1_&quot; TS_clk_100mhz1 / 2 PHASE 1250 ps HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="unknown" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_100mhz1</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_100mhz1</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/Using_PLL0.PLL0_INST/PLL_INST/Using_PLL_ADV.PLL_ADV_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT2</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_Inst_cpu_0_clock_generator_0_clock_generator_0_PLL0_CLK_OUT_2_ = PERIOD &quot;Inst_cpu_0_clock_generator_0_clock_generator_0_PLL0_CLK_OUT_2_&quot; TS_clk_100mhz1 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/gen_rden[1].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/gen_rden[2].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/gen_rden[3].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/gen_rden[4].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/gen_rden[5].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/gen_rden[6].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">Inst_cpu_0/DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/gen_rden[7].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_Virtex5.DSP48E_I1</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_Virtex5.DSP48E_I1</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_Virtex5.DSP48E_I1</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_Virtex5.dsp_module_lower/Using_Virtex5.DSP48E_I1</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_Virtex5.dsp_module_upper/Using_Virtex5.DSP48E_I1</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[46].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[46].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[48].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[48].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[47].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[44].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[43].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[42].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[41].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[40].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[39].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[38].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[37].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[36].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[35].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[34].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[33].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[32].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[31].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[30].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[29].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[28].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[27].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[24].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[23].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[22].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[21].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[20].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[19].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[18].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[17].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[16].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[15].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[14].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[13].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[12].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[11].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[45].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[26].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[25].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[11].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[11].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[30].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[29].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[28].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[27].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[26].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[25].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[24].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[23].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[22].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[21].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[20].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[19].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[18].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[17].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[16].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[15].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[14].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[13].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[12].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM18.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="unknown" >FF primitive &apos;<arg fmt="%s" index="1">test/line_creator_0/convers_float_0/float18_fix_convz/blk00000003/blk0000005e</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="unknown" >FF primitive &apos;<arg fmt="%s" index="1">test/line_creator_0/convers_float_0/float18_fix_convz/blk00000003/blk0000005f</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="unknown" >FF primitive &apos;<arg fmt="%s" index="1">test/line_creator_0/convers_float_0/float18_fix_convy/blk00000003/blk00000054</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="unknown" >FF primitive &apos;<arg fmt="%s" index="1">test/line_creator_0/convers_float_0/float18_fix_convy/blk00000003/blk00000055</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="unknown" >FF primitive &apos;<arg fmt="%s" index="1">test/line_creator_0/convers_float_0/float18_fix_convx/blk00000003/blk00000058</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="unknown" >FF primitive &apos;<arg fmt="%s" index="1">test/line_creator_0/convers_float_0/float18_fix_convx/blk00000003/blk00000059</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB36SDP_EXP</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000006</arg>&quot; of type &quot;<arg fmt="%s" index="3">DSP48E</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N309</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N310</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N311</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N312</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N313</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N314</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N315</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N316</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N338</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N339</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N340</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N341</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N342</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N343</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N344</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N345</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N346</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N347</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N348</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N349</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N350</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N351</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N352</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N353</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N354</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N355</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N356</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N357</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N358</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N359</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N360</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N361</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N362</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N363</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N364</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N365</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N366</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N367</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N368</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N369</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N370</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N371</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N372</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N373</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N374</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N375</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N376</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N377</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N378</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N379</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N380</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N381</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N382</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N383</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N384</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N385</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N386</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N387</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N388</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N389</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N390</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N391</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N392</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N393</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N394</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N395</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N396</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N397</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N398</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N399</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N400</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N401</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N402</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N403</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N404</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N405</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N406</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N407</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N408</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N409</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="unknown" >clock net <arg fmt="%s" index="1">Inst_cpu_0/debug_module/bscan_drck1</arg> with clock driver <arg fmt="%s" index="2">Inst_cpu_0/debug_module/debug_module/BUFG_DRCK1</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">fpga_0_IIC_EEPROM_Scl_pin</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">fpga_0_IIC_EEPROM_Sda_pin</arg>&apos; has no legal driver
+</msg>
+
+</messages>
+

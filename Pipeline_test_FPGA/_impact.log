@@ -1,0 +1,159 @@
+iMPACT Version: 10.1.03
+
+iMPACT log file Started on Thu Sep 22 22:32:27 2011
+
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ LPT base address = 0378h.
+ ECP base address = 0778h.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_xp2.sys found.
+ Driver version: src=2301, dest=2301.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ Cable PID = 0008.
+ Max current requested during enumeration is 150 mA.
+Type = 0x0005.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 2401.
+File version of C:/Xilinx/10.1/ISE/data/xusb_xp2.hex = 2401.
+Firmware hex file version = 2401.
+PLD file version = 200Dh.
+ PLD version = 200Dh.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vlx110t, Version : 7
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/virtex5/data/xc5vlx110t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vlx110t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xc95144xl, Version : 5
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xc9500xl/data/xc95144xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc95144xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'5': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 5 -file"D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.bit"
+'5': Loading file 'D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '5': Added Device xc5vlx110t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 5 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+5: Device Temperature: Current Reading:   45.45 C, Min. Reading:   28.72 C, Max.Reading:   45.95 C
+5: VCCINT Supply: Current Reading:   0.999 V, Min. Reading:   0.999 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.487 V, Min. Reading:   2.484 V, Max.Reading:   2.487 V
+PROGRESS_START - Starting Operation.
+'5': Programming device...
+ Match_cycle = 2.
+done.
+'5': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+End of startup signal from Startup block          :         1
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         0
+value of MODE pin M1                              :         0
+Value of MODE pin M2                              :         0
+Internal signal indicates when housecleaning is completed:         1
+Value driver in from INIT pad                     :         1
+Internal signal indicates that chip is configured :         1
+Value of DONE pin                                 :         1
+Indicates when ID value written does not match chip ID:         0
+Decryptor error Signal                            :         0
+System Monitor Over-Temperature Alarm             :         0
+startup_state[18] CFG startup state machine       :         0
+startup_state[19] CFG startup state machine       :         0
+startup_state[20] CFG startup state machine       :         1
+E-fuse program voltage available                  :         0
+SPI Flash Type[22] Select                         :         1
+SPI Flash Type[23] Select                         :         1
+SPI Flash Type[24] Select                         :         1
+CFG bus width auto detection result               :         0
+CFG bus width auto detection result               :         0
+Reserved                                          :         0
+BPI address wrap around error                     :         0
+IPROG pulsed                                      :         0
+read back crc error                               :         0
+Indicates that efuse logic is busy                :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0001 1110 0000 1011 1000 0000 
+INFO:iMPACT:579 - '5': Completed downloading bit file to device.
+ Match_cycle = 2.
+INFO:iMPACT - '5': Checking done pin....done.
+'5': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     11 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs

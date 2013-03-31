@@ -1,0 +1,819 @@
+/*
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A 
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR 
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION 
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE 
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO 
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO 
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE 
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY 
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
+/*
+ * X ilinx EDK 10.1.03 EDK_K_SP3.6
+ *
+ * This file is a sample test application
+ *
+ * This application is intended to test and/or illustrate some 
+ * functionality of your system.  The contents of this file may
+ * vary depending on the IP in your system and may use existing
+ * IP driver functions.  These drivers will be generated in your
+ * XPS project when you run the "Generate Libraries" menu item
+ * in XPS.
+ *
+ * Your XPS project directory is at:
+ *    D:\xiao\test\cpu_0\
+ */
+
+
+// Located in: microblaze_0/include/xparameters.h
+#include "xbasic_types.h"  // zhe ge wei gcc bian yi qi jue ding de 
+#include "xparameters.h"   // wei chang liang de xian shi chu li     dou wen jian dou shi yao zi ji tian jia de 
+#include "xuartlite_l.h"   // wei sofeware  platform setting 
+#include "xio.h"           // tong yong de goip kou xiang guang chu li 
+#include "xiic.h"          //  
+#include "xenv.h"          // bao hang zhe  ke neng hui yong dao
+//#include "unistd.h" 
+#include "stdio.h" 
+#include "xutil.h" 
+#include "mb_interface.h"  // bian yi huang jing xu yao de ku dou shi zi ji se ding de 
+#include "register_control.h" 
+//#include "xintc_l.h" 
+#include "float.h" 
+#include "math.h" 
+
+//====================================================
+
+#define MASTER_CLOCK   100000000  // 100Mhz 
+#define I2C_FREQUENCY  100000     // 100Khz 
+#define I2C_PRER_VALUE (MASTER_CLOCK / (5 * I2C_FREQUENCY)) - 1 
+#define I2C_WTIME      0x00080000 // ~5m 
+ 
+
+#define GPU_REG_BADDR   XPAR_REGISTER_CONTROL_0_BASEADDR
+#define I2C_BADDR       XPAR_IIC_EEPROM_BASEADDR    //-- kei yi zuo you gai de 
+//#define VIDEO_I2C_BADDR XPAR_IIC_DVI_BASEADDR  -- ye shi ke yi zuo xiu gai de 
+
+#define EEPROM_ADDR 0xA0  //-- ke yi xiang guang de zuo yong  ? shi bu shi zhe ge di zhi hai bu shi hen qing chu 
+//#define DVI_ADDR 0xEC     -- yi shang chu     ZHE BU FENG ZAI YI zhe ge jiu bu dui a 
+//#define DVI_RGB_BYPASS 0x21   -- xiang ying de di address
+//#define DVI_TESTMODE   0x48   -- the same as above 
+//#define DVI_POWER_MNG  0x49   
+//#define DVI_VERSION_ID 0x4A   
+//#define DVI_DEVICE_ID  0x4B   
+ 
+#define   GPU_ID                     GPU_REG_BADDR + 0x0  // -- gpu de address above  
+#define GPU_SCRATCH                GPU_REG_BADDR + 0x4  // yi jing zuo le xiang guang de gai dong le 
+#define GPU_STATUE                 GPU_REG_BADDR + 0x8  //eof
+#define GPU_CONTROL_ENABLE         GPU_REG_BADDR + 0xC 
+#define GPU_BACKGROUND_COLOR       GPU_REG_BADDR + 0x10 
+#define GPU_BACKGROUND_DEPTH       GPU_REG_BADDR + 0x14 
+
+#define GPU_ZBT_MBOX_WRITE         GPU_REG_BADDR + 0x18 
+#define GPU_ZBT_MBOX_READ          GPU_REG_BADDR + 0x1C 
+#define GPU_ZBT_MBOX_DATA0         GPU_REG_BADDR + 0x20 
+#define GPU_ZBT_MBOX_DATA1         GPU_REG_BADDR + 0x24 
+#define GPU_ZBT_MBOX_ADDR_ENABLE   GPU_REG_BADDR + 0x5C  // ENABLE THE ZBT WRITE '1' to '0'
+
+#define GPU_CLIP_ZMAX              GPU_REG_BADDR + 0x28 
+ 
+#define GPU_MATRIX_C0_DATA         GPU_REG_BADDR + 0x2C  // gao wei de C0  C1  C2  C3
+#define GPU_MATRIX_C1_DATA         GPU_REG_BADDR + 0x30 
+#define GPU_MATRIX_C2_DATA         GPU_REG_BADDR + 0x34 
+#define GPU_MATRIX_C3_DATA         GPU_REG_BADDR + 0x38 
+#define GPU_MATRIX_ADDR            GPU_REG_BADDR + 0x3c 
+#define GPU_MATRIX_WRITE           GPU_REG_BADDR + 0x58  // ENABLE THE MATRIX WRITE '1' - '0'
+
+#define GPU_X_POINT                GPU_REG_BADDR + 0x40   // X  
+#define GPU_Y_POINT                GPU_REG_BADDR + 0x44   // Y
+#define GPU_Z_POINT                GPU_REG_BADDR + 0x48   // Z
+#define GPU_W_POINT                GPU_REG_BADDR + 0x4C   // W 
+#define GPU_COLOR_POINT            GPU_REG_BADDR + 0x50   // THEN WE DRAW A LINE THE COLOR OF FIRST PIONT IS ACCEPTED AND THE SECOND IS IGNORED
+#define GPU_POINT_TRIG             GPU_REG_BADDR + 0x54  // ENABLE THE POINT WRITE '1' - '0' 
+
+#define GPU_Tx_coord			   GPU_REG_BADDR + 0x60  //Tx
+#define GPU_Ty_coord			   GPU_REG_BADDR + 0x64  //Ty
+#define	vertex_texcoord			   GPU_REG_BADDR + 0x68  // 
+
+#define clc_scr					   GPU_REG_BADDR + 0x6c
+//==================================================== 
+const Xuint8 MICRON_AUX_REG = 0xF0;  // MAY NOT BE USED
+const Xuint8 CAMERA_I2C_SLAVEADDR = 0xB8; // ke neng ye shi bu dui de 
+const float  MOVE_INCR = 0.0025;  // float 
+const float  SCALE_INCR = 0.005;  //
+const float  ANGLE_INCR = 0.005 * M_PI;  // incre shu ju xiang   wei chang liang bu ke xiu gai 
+ 
+// Define Globals. 
+volatile Xuint32 scene_update;  // shu chu de zhi wei volatile yong   jiu shi wei le bao xian qi jian 
+
+void init_peripherals( )  // wei chu shi hua wai peripherals 
+{ 
+   Xuint8         i2c_read_byte;  
+   Xuint32        gpu_read_word;  
+   volatile float *gpu_float_ptr;  //  yong yu biao shi wei zhi xiang volatile float de lei xing 
+   volatile float gpu_float;  // yong yi chun chu xiang ying de shu zhi 
+   volatile int   *gpu_int_ptr; // yong yu zhi xiang volatile integer 
+   volatile float gpu_matrix[4][4]; // yong yu xiang guang de shu ju feng xi 
+   int x,y,i,j; 
+ 
+  // Initialize the DVI I2C core. 
+  xil_printf("Initializing DVI DAC I2C Bus... \r\n");  // keng ding zai xiang guang de nei rong zhong qu de dong dong 
+ 
+  // Check GPU id. 
+  gpu_read_word = XIo_In32(GPU_ID); 
+  xil_printf("GPU ID Reg = 0x%x \n\r",gpu_read_word); 
+ 
+   print("disable the dvi \n\r");
+   XIo_Out32(GPU_CONTROL_ENABLE, 0x0); 
+ 
+  // Clear out Memory 
+  print("Clearing Memory \n\r");
+  print("Clearing Memory \n\r"); 
+  print("Clearing Memory \n\r");
+  XIo_Out32(GPU_ZBT_MBOX_DATA0, 0x00010a35);   // xie ru de shi hou jiu shi zhi jie zai fu zhi de 
+  XIo_Out32(GPU_ZBT_MBOX_DATA1, 0x0); 
+  
+ for (x=0; x<320; x++) { 
+    for (y=0; y<240; y++) { 
+      XIo_Out32(GPU_ZBT_MBOX_WRITE, ((x+(y*320))*4)); 
+         gpu_read_word = XIo_In32(GPU_STATUE); 
+	   	//XIo_Out32(GPU_STATUE,0); 
+			XIo_Out32(GPU_ZBT_MBOX_ADDR_ENABLE,1);
+			XIo_Out32(GPU_ZBT_MBOX_ADDR_ENABLE,0);
+    } 
+  } 
+ 
+  // Set background color. 
+  print("Setting Background Color\n\r"); 
+  XIo_Out32(GPU_BACKGROUND_COLOR, 0x00000000); 
+  gpu_read_word = XIo_In32(GPU_BACKGROUND_COLOR); 
+  xil_printf("GPU Background Color = 0x%x \n\r",gpu_read_word); 
+ 
+  print("Setting Background Color\n\r"); 
+  XIo_Out32(GPU_BACKGROUND_DEPTH, 0x00000000); 
+  gpu_read_word = XIo_In32(GPU_BACKGROUND_DEPTH); 
+  xil_printf("GPU Background Depth = 0x%x \n\r",gpu_read_word); 
+
+//  // Set Clipping Registers. 
+  print("Setting ZMax Clipping Plane\n\r"); 
+  XIo_Out32(GPU_CLIP_ZMAX,0xBDCCCCCC); 
+  gpu_read_word = XIo_In32(GPU_CLIP_ZMAX); 
+  xil_printf("GPU ZMax Clipping Plane = 0x%x \n\r",gpu_read_word); 
+  
+  	   
+  	  
+  	  
+  	    gpu_matrix[0][0] = 1.0;  gpu_matrix[0][1] = 0.0;  gpu_matrix[0][2] = 0.0;  gpu_matrix[0][3] = 0.0;
+	    gpu_matrix[1][0] = 0.0;  gpu_matrix[1][1] = 1.0;  gpu_matrix[1][2] = 0.0;  gpu_matrix[1][3] = 0.0; 
+        gpu_matrix[2][0] = 0.0;  gpu_matrix[2][1] = 0.0;  gpu_matrix[2][2] = 1.0;  gpu_matrix[2][3] = 0.0; 
+        gpu_matrix[3][0] = 0.0;  gpu_matrix[3][1] = 0.0;  gpu_matrix[3][2] = 0.0;  gpu_matrix[3][3] = 1.0; 
+ 
+       // Write world to view transformation matrix to hardware. 
+       
+       
+  xil_printf("Setting up world Translation Matrix\n\r"); 
+  gpu_float_ptr = &gpu_float; 
+  for (i=0; i<=3; i++) { 
+    for (j=0; j<=3; j++) { 
+      gpu_float   = gpu_matrix[i][j]; 
+      gpu_int_ptr = (int*)&gpu_float; 
+      if (j==0) { 
+        XIo_Out32(GPU_MATRIX_C0_DATA, *gpu_int_ptr);           
+      } else if (j==1) { 
+        XIo_Out32(GPU_MATRIX_C1_DATA, *gpu_int_ptr); 
+      } else if (j==2) { 
+        XIo_Out32(GPU_MATRIX_C2_DATA, *gpu_int_ptr); 
+      } else { 
+        XIo_Out32(GPU_MATRIX_C3_DATA, *gpu_int_ptr); 
+      	  XIo_Out32(GPU_MATRIX_ADDR, (0x00 | i));
+		  XIo_Out32(GPU_MATRIX_WRITE,  1);
+		  XIo_Out32(GPU_MATRIX_WRITE,  0);
+      }  
+    } 
+  } 
+  
+   	    gpu_matrix[0][0] = 1.0;  gpu_matrix[0][1] = 0.0;  gpu_matrix[0][2] = 0.0;  gpu_matrix[0][3] = 0.0;
+	    gpu_matrix[1][0] = 0.0;  gpu_matrix[1][1] = 1.0;  gpu_matrix[1][2] = 0.0;  gpu_matrix[1][3] = 0.0; 
+        gpu_matrix[2][0] = 0.0;  gpu_matrix[2][1] = 0.0;  gpu_matrix[2][2] = 1.0;  gpu_matrix[2][3] = 0.0; 
+        gpu_matrix[3][0] = 0.0;  gpu_matrix[3][1] = 0.0;  gpu_matrix[3][2] = 0.0;  gpu_matrix[3][3] = 1.0; 
+ 
+       // Write world to view transformation matrix to hardware. 
+       
+       
+  xil_printf("Setting up view Translation Matrix\n\r"); 
+  gpu_float_ptr = &gpu_float; 
+  for (i=0; i<=3; i++) { 
+    for (j=0; j<=3; j++) { 
+      gpu_float   = gpu_matrix[i][j]; 
+      gpu_int_ptr = (int*)&gpu_float; 
+      if (j==0) { 
+        XIo_Out32(GPU_MATRIX_C0_DATA, *gpu_int_ptr);           
+      } else if (j==1) { 
+        XIo_Out32(GPU_MATRIX_C1_DATA, *gpu_int_ptr); 
+      } else if (j==2) { 
+        XIo_Out32(GPU_MATRIX_C2_DATA, *gpu_int_ptr); 
+      } else { 
+        XIo_Out32(GPU_MATRIX_C3_DATA, *gpu_int_ptr); 
+      	  XIo_Out32(GPU_MATRIX_ADDR, (0x04 | i));
+		  XIo_Out32(GPU_MATRIX_WRITE,  1);
+		  XIo_Out32(GPU_MATRIX_WRITE,  0);
+      }  
+    } 
+  } 
+  
+   xil_printf("Setting up projection Translation Matrix\n\r"); 
+  gpu_float_ptr = &gpu_float; 
+  for (i=0; i<=3; i++) { 
+    for (j=0; j<=3; j++) { 
+      gpu_float   = gpu_matrix[i][j]; 
+      gpu_int_ptr = (int*)&gpu_float; 
+      if (j==0) { 
+        XIo_Out32(GPU_MATRIX_C0_DATA, *gpu_int_ptr);           
+      } else if (j==1) { 
+        XIo_Out32(GPU_MATRIX_C1_DATA, *gpu_int_ptr); 
+      } else if (j==2) { 
+        XIo_Out32(GPU_MATRIX_C2_DATA, *gpu_int_ptr); 
+      } else { 
+        XIo_Out32(GPU_MATRIX_C3_DATA, *gpu_int_ptr); 
+      	  XIo_Out32(GPU_MATRIX_ADDR, (0x08 | i));
+		  XIo_Out32(GPU_MATRIX_WRITE,  1);
+		  XIo_Out32(GPU_MATRIX_WRITE,  0);
+      }  
+    } 
+  } 
+  
+// 
+//  // Set Viewport to Screen Translation Matrix. 
+  gpu_matrix[0][0] = 160;  gpu_matrix[0][1] = 0.0;   gpu_matrix[0][2] = 0.0; 	gpu_matrix[0][3] = 160; 
+  gpu_matrix[1][0] = 0.0;  gpu_matrix[1][1] = 120; 	 gpu_matrix[1][2] = 0.0; 	gpu_matrix[1][3] = 120; 
+  gpu_matrix[2][0] = 0.0;  gpu_matrix[2][1] = 0,0;   gpu_matrix[2][2] = 1000.0; 	gpu_matrix[2][3] = 1000.0; 
+  gpu_matrix[3][0] = 0.0;  gpu_matrix[3][1] = 0.0;   gpu_matrix[3][2] = 0.0; 	gpu_matrix[3][3] = 1.0; 
+// 
+//  // Write transformation matrix to hardware. 
+  xil_printf("Setting up Screen Translation Matrix\n\r"); 
+  gpu_float_ptr = &gpu_float; 
+  for (i=0; i<=3; i++) { 
+    for (j=0; j<=3; j++) { 
+      gpu_float   = gpu_matrix[i][j]; 
+      gpu_int_ptr = (int*)&gpu_float; 
+      if (j==0) { 
+        XIo_Out32(GPU_MATRIX_C0_DATA, *gpu_int_ptr);           
+      } else if (j==1) { 
+        XIo_Out32(GPU_MATRIX_C1_DATA, *gpu_int_ptr); 
+      } else if (j==2) { 
+        XIo_Out32(GPU_MATRIX_C2_DATA, *gpu_int_ptr); 
+      } else { 
+        XIo_Out32(GPU_MATRIX_C3_DATA, *gpu_int_ptr); 
+      	  XIo_Out32(GPU_MATRIX_ADDR, (0x0c | i));
+		  XIo_Out32(GPU_MATRIX_WRITE,  1);
+		  XIo_Out32(GPU_MATRIX_WRITE,  0);
+      }  
+    } 
+  } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  print("Enableing GPU Logic \n\r"); 
+  XIo_Out32(GPU_CONTROL_ENABLE, 0x0); 
+  
+  print("Enableing DVI Logic \n\r"); 
+  XIo_Out32(GPU_CONTROL_ENABLE, 0x3); 
+  
+  gpu_read_word = XIo_In32(GPU_CONTROL_ENABLE); 
+  xil_printf("GPU Control Reg = 0x%x \n\r",gpu_read_word);
+
+}    
+
+
+int main (void) {
+
+ // Object 1 
+   volatile float x0[37]; 
+   volatile float y0[37]; 
+   volatile float z0[37];
+   volatile float tx[4];
+   volatile float ty[4]; 
+   volatile int   color[2]; 
+   volatile float angle,scale; 
+   
+  
+   volatile int f0[64],f1[64],f2[64];
+   volatile int t0[64],t1[64],t2[64];
+   
+   int *tx_int_ptr, *ty_int_ptr;
+ 
+   //volatile float *x0_float_ptr,*y0_float_ptr,*z0_float_ptr; 
+   volatile int   *x0_int_ptr,*y0_int_ptr,*z0_int_ptr; 
+   volatile float x1_float,y1_float,z1_float; 
+  // volatile float *x1_float_ptr,*y1_float_ptr,*z1_float_ptr; 
+  // volatile int   *x1_int_ptr,*y1_int_ptr,*z1_int_ptr; 
+   volatile float matrix[4][4]; 
+   volatile float *matrix_float_ptr; 
+   volatile float matrix_float; 
+   volatile int   *matrix_int_ptr; 
+   volatile float cosz,sinz,cosy,siny,cosx,sinx; 
+   volatile float active_object = -1;  
+   int i,j,count = 0; 
+   int k = 0; 
+   Xuint32 gpu_read_word; 
+
+   Xuint32 read_statue;
+   Xuint32 read_eof;
+   
+  matrix[0][0] = 1.0; matrix[0][1] = 0.0; matrix[0][2] = 0.0; matrix[0][3] = 0.0; 
+  matrix[1][0] = 0.0; matrix[1][1] = 1.0; matrix[1][2] = 0.0; matrix[1][3] = 0.0; 
+  matrix[2][0] = 0.0; matrix[2][1] = 0.0; matrix[2][2] = 1.0; matrix[2][3] = 0.0; 
+  matrix[3][0] = 0.0; matrix[3][1] = 0.0; matrix[3][2] = 0.0; matrix[3][3] = 1.0; 
+   /*
+    * Enable and initialize cache
+    */
+   #if XPAR_MICROBLAZE_0_USE_ICACHE
+      microblaze_init_icache_range(0, XPAR_MICROBLAZE_0_CACHE_BYTE_SIZE);
+      microblaze_enable_icache();
+   #endif
+
+   #if XPAR_MICROBLAZE_0_USE_DCACHE
+      microblaze_init_dcache_range(0, XPAR_MICROBLAZE_0_DCACHE_BYTE_SIZE);
+      microblaze_enable_dcache();
+   #endif
+	
+		
+	
+	print("-- Powering Up GPU! --\r\n"); 
+    init_peripherals(); 
+    
+    XIo_Out32(vertex_texcoord, 0);
+    XIo_Out32(vertex_texcoord, 1);
+	 
+  
+    xil_printf("Initilaizing peripherals over \n\r"); 
+	
+   // Define objects local coordinate system location 
+   
+x0[0]=-0.382100, y0[0]=-0.168400, z0[0]=0.002100;
+x0[1]=-0.107900, y0[1]=0.248700, z0[1]=0.317600;
+x0[2]=0.382100, y0[2]=0.168400, z0[2]=-0.002100;
+x0[3]=0.107900, y0[3]=-0.248700, z0[3]=-0.317600;
+x0[4]=-0.199200, y0[4]=-0.578700, z0[4]=0.385500;
+x0[5]=0.290800, y0[5]=-0.659000, z0[5]=0.065800;
+x0[6]=0.565000, y0[6]=-0.241800, z0[6]=0.381400;
+x0[7]=0.075000, y0[7]=-0.161500, z0[7]=0.701000;
+
+tx[0]=64.0, ty[0]=0.000000;
+tx[1]=64.0, ty[1]=64.0;
+tx[2]=0.000000, ty[2]=64.0;
+tx[3]=0.000000, ty[3]=0.000000;
+
+f0[0]=0, f1[0]=1, f2[0]=2;
+f0[1]=2, f1[1]=3, f2[1]=0;
+f0[2]=4, f1[2]=5, f2[2]=6;
+f0[3]=6, f1[3]=7, f2[3]=4;
+f0[4]=0, f1[4]=3, f2[4]=5;
+f0[5]=5, f1[5]=4, f2[5]=0;
+f0[6]=3, f1[6]=2, f2[6]=6;
+f0[7]=6, f1[7]=5, f2[7]=3;
+f0[8]=2, f1[8]=1, f2[8]=7;
+f0[9]=7, f1[9]=6, f2[9]=2;
+f0[10]=1, f1[10]=0, f2[10]=4;
+f0[11]=4, f1[11]=7, f2[11]=1;
+
+t0[0]=0, t1[0]=1, t2[0]=2;
+t0[1]=2, t1[1]=3, t2[1]=0;
+t0[2]=3, t1[2]=0, t2[2]=1;
+t0[3]=1, t1[3]=2, t2[3]=3;
+t0[4]=3, t1[4]=0, t2[4]=1;
+t0[5]=1, t1[5]=2, t2[5]=3;
+t0[6]=3, t1[6]=0, t2[6]=1;
+t0[7]=1, t1[7]=2, t2[7]=3;
+t0[8]=3, t1[8]=0, t2[8]=1;
+t0[9]=1, t1[9]=2, t2[9]=3;
+t0[10]=3, t1[10]=0, t2[10]=1;
+t0[11]=1, t1[11]=2, t2[11]=3;
+
+ 
+ 
+
+	   XIo_Out32(GPU_COLOR_POINT, 0xff0000ff); 
+	   gpu_read_word = XIo_In32(GPU_COLOR_POINT); 
+       xil_printf("GPU_COLOR_POINT = 0x%x \n\r",gpu_read_word); 
+       XIo_Out32(GPU_W_POINT, 0x3F800000); 	
+       
+       	
+
+  while (1)
+
+	{	
+		//read_eof = XIo_In32(GPU_STATUE);		
+		//while(read_eof==0){read_eof = XIo_In32(GPU_STATUE);}
+	       // count++ ;
+//////////////////////////////////////////////////////////////// x 45
+//	       	if (count == 40)
+//	        {
+//	        	 matrix[1][1] = 0.707;  matrix[1][2] = -0.707;
+//                 matrix[2][1] = 0.707;  matrix[2][2] = 0.707; 
+//	        }
+//	        
+//	       	if (count == 80)
+//	        {
+//	        	 matrix[1][1] = 0.0;  matrix[1][2] = -1.0;
+//                 matrix[2][1] = 1.0;  matrix[2][2] = 0.0; 
+//	        }
+//	        
+//	        if (count == 120)
+//	        {
+//	        	 matrix[1][1] = -0.707;  matrix[1][2] = -0.707;
+//                 matrix[2][1] = 0.707;  matrix[2][2] = -0.707; 
+//	        }
+//	        
+//	        if (count == 160)
+//	        {
+//	        	 matrix[1][1] = -1.0;  matrix[1][2] = 0.0;
+//                 matrix[2][1] = 0.0;  matrix[2][2] = -1.0; 
+//	        }
+//	        
+//	        if (count == 200)
+//	        {
+//	        	 matrix[1][1] = -0.707;  matrix[1][2] = 0.707;
+//                 matrix[2][1] = -0.707;  matrix[2][2] = -0.707; 
+//	        }
+//	        
+//	        if (count == 240)
+//	        {
+//	        	 matrix[1][1] = 0.0;  matrix[1][2] = 1.0;
+//                 matrix[2][1] = -1.0;  matrix[2][2] = 0.0; 
+//	        }
+//	        
+//	        if (count == 280)
+//	        {
+//	        	 matrix[1][1] = 0.707;  matrix[1][2] = 0.707;
+//                 matrix[2][1] = -0.707;  matrix[2][2] = 0.707; 
+//	        }
+//	        
+//	        if (count == 320)
+//	        {
+//	        	 matrix[1][1] = 1.0;  matrix[1][2] = 0.0;
+//                 matrix[2][1] = 1.0;  matrix[2][2] = 1.0; 
+//                 count=0;
+//	        }
+	        
+	       
+//////////////////////////////////////////////////////////////////	x 30
+	       	if (count == 20)
+	        {
+	        	 matrix[1][1] = 0.86;  matrix[1][2] = -0.5;
+                 matrix[2][1] = 0.5;   matrix[2][2] = 0.86; 
+	        }
+	       
+	        if (count == 40)
+	        {
+	        	 matrix[1][1] = 0.5;  matrix[1][2] = -0.86;
+                 matrix[2][1] = 0.86;  matrix[2][2] = 0.5; 
+                 //count=0;
+	        }	        
+       
+	        
+	        if (count == 60)
+	        {
+	        	 matrix[1][1] = 0.0;  matrix[1][2] = -1.0;
+                 matrix[2][1] = 1.0;  matrix[2][2] = 0.0; 
+	        }
+	        
+	        
+	        if (count == 80)
+	        {
+	        	 matrix[1][1] = -0.5;  matrix[1][2] = -0.86;
+                 matrix[2][1] = 0.86;  matrix[2][2] = -0.5; 
+	        }
+	        
+	        
+	         if (count == 100)
+	        {
+	        	 matrix[1][1] = -0.86;  matrix[1][2] = -0.5;
+                 matrix[2][1] = 0.5;  matrix[2][2] = -0.86; 
+	        }
+	        
+	        
+	         if (count == 120)
+	        {
+	        	 matrix[1][1] = -1.0;  matrix[1][2] = 0.0;
+                 matrix[2][1] = 0.0;  matrix[2][2] = -1.0; 
+	        }
+	        
+	        
+	         if (count == 140)
+	        {
+	        	 matrix[1][1] = -0.86;  matrix[1][2] = 0.5;
+                 matrix[2][1] = -0.5;  matrix[2][2] = -0.86; 
+	        }
+	        
+	         if (count == 160)
+	        {
+	        	 matrix[1][1] = -0.5;  matrix[1][2] = 0.86;
+                 matrix[2][1] = -0.86;  matrix[2][2] = -0.5; 
+	        }
+	        
+	        if (count == 180)
+	        {
+	        	 matrix[1][1] = 0.0;  matrix[1][2] = 1.0;
+                 matrix[2][1] = -1.0;  matrix[2][2] = 0.0; 
+	        }
+	        
+	        if (count == 200)
+	        {
+	        	 matrix[1][1] = 0.5;  matrix[1][2] = 0.86;
+                 matrix[2][1] = -0.86;  matrix[2][2] = 0.5; 
+                // count=0;
+	        }
+	        
+	        if (count == 220)
+	        {
+	        	 matrix[1][1] = 0.86;  matrix[1][2] = 0.5;
+                 matrix[2][1] = -0.5;  matrix[2][2] = 0.86; 
+                // count = 0;
+	        }
+	        
+            if (count == 240)
+	        {
+	        	 matrix[1][1] = 1.0;  matrix[1][2] = 0.0;
+                 matrix[2][1] = 0.0;  matrix[2][2] = 1.0; 
+                 count = 0;
+	        }
+
+
+	        
+/////////////////////////////////////////////////////////////////   z  30
+	        
+//	        
+//	        if (count == 20)
+//	        {
+//	        	 matrix[0][0] = 0.86;  matrix[0][1] = -0.5;
+//                 matrix[1][0] = 0.5;   matrix[1][1] = 0.86; 
+//	        }
+//	       
+//	        if (count == 40)
+//	        {
+//	        	 matrix[0][0] = 0.5;  matrix[0][1] = -0.86;
+//                 matrix[1][0] = 0.86;  matrix[1][1] = 0.5; 
+//	        }
+//	        
+//	        
+//	        if (count == 60)
+//	        {
+//	        	 matrix[0][0] = 0.0;  matrix[0][1] = -1.0;
+//                 matrix[1][0] = 1.0;  matrix[1][1] = 0.0; 
+//	        }
+//	        
+//	        
+//	        if (count == 80)
+//	        {
+//	        	 matrix[0][0] = -0.5;  matrix[0][1] = -0.86;
+//                 matrix[1][0] = 0.86;  matrix[1][1] = -0.5; 
+//	        }
+//	        
+//	        
+//	         if (count == 100)
+//	        {
+//	        	 matrix[0][0] = -0.86;  matrix[0][1] = -0.5;
+//                 matrix[1][0] = 0.5;  matrix[1][1] = -0.86; 
+//	        }
+//	        
+//	        
+//	         if (count == 120)
+//	        {
+//	        	 matrix[0][0] = -1.0;  matrix[0][1] = 0.0;
+//                 matrix[1][0] = -0.0;  matrix[1][1] = -1.0; 
+//	        }
+//	        
+//	        
+//	         if (count == 140)
+//	        {
+//	        	 matrix[0][0] = -0.86;  matrix[0][1] = 0.5;
+//                 matrix[1][0] = -0.5;  matrix[1][1] = -0.86; 
+//	        }
+//	        
+//	         if (count == 160)
+//	        {
+//	        	 matrix[0][0] = -0.5;  matrix[0][1] = 0.86;
+//                 matrix[1][0] = -0.86;  matrix[1][1] = -0.5; 
+//	        }
+//	        
+//	        if (count == 180)
+//	        {
+//	        	 matrix[0][0] = 0.0;  matrix[0][1] = 1.0;
+//                 matrix[1][0] = -1.0;  matrix[1][1] = 0.0; 
+//	        }
+//	        
+//	        if (count == 200)
+//	        {
+//	        	 matrix[0][0] = 0.5;  matrix[0][1] = 0.86;
+//                 matrix[1][0] = -0.86;  matrix[1][1] = 0.5; 
+//                 //count=0;
+//	        }
+//	        
+//	        if (count == 220)
+//	        {
+//	        	 matrix[0][0] = 0.86;  matrix[0][1] = 0.5;
+//                 matrix[1][0] = -0.5;  matrix[1][1] = 0.86; 
+//                 //count = 0;
+//	        }
+//	        
+//            if (count == 240)
+//	        {
+//	        	 matrix[0][0] = 1.0;  matrix[0][1] = 0.0;
+//                 matrix[1][0] = 0.0;  matrix[1][1] = 1.0; 
+//                 count = 0;
+//	        }
+
+//////////////////////////////////////////////////////////////////// y 30
+//
+//	        if (count == 20)
+//	        {
+//	        	 matrix[0][0] = 0.86;  matrix[0][2] = 0.5;
+//                 matrix[2][0] = -0.5;   matrix[2][2] = 0.86; 
+//	        }
+//	       
+//	        if (count == 40)
+//	        {
+//	        	 matrix[0][0] = 0.5;  matrix[0][2] = 0.86;
+//                 matrix[2][0] = -0.86;  matrix[2][2] = 0.5; 
+//	        }
+//	        
+//	        
+//	        if (count == 60)
+//	        {
+//	        	 matrix[0][0] = 0.0;  matrix[0][2] = 1.0;
+//                 matrix[2][0] = -1.0;  matrix[2][2] = 0.0; 
+//	        }
+//	        
+//	        
+//	        if (count == 80)
+//	        {
+//	        	 matrix[0][0] = -0.5;  matrix[0][2] = 0.86;
+//                 matrix[2][0] = -0.86;  matrix[2][2] = -0.5; 
+//	        }
+//	        
+//	        
+//	         if (count == 100)
+//	        {
+//	        	 matrix[0][0] = -0.86;  matrix[0][2] = 0.5;
+//                 matrix[2][0] = -0.5;  matrix[2][2] = -0.86; 
+//	        }
+//	        
+//	        
+//	         if (count == 120)
+//	        {
+//	        	 matrix[0][0] = -1.0;  matrix[0][2] = -0.0;
+//                 matrix[2][0] = 0.0;  matrix[2][2] = -1.0; 
+//	        }
+//	        
+//	        
+//	         if (count == 140)
+//	        {
+//	        	 matrix[0][0] = -0.86;  matrix[0][2] = -0.5;
+//                 matrix[2][0] = 0.5;  matrix[2][2] = -0.86; 
+//	        }
+//	        
+//	         if (count == 160)
+//	        {
+//	        	 matrix[0][0] = -0.5;  matrix[0][2] = -0.86;
+//                 matrix[2][0] = 0.86;  matrix[2][2] = -0.5; 
+//	        }
+//	        
+//	        if (count == 180)
+//	        {
+//	        	 matrix[0][0] = 0.0;  matrix[0][2] = -1.0;
+//                 matrix[2][0] = 1.0;  matrix[2][2] = 0.0; 
+//	        }
+//	        
+//	        if (count == 200)
+//	        {
+//	        	 matrix[0][0] = 0.5;  matrix[0][2] = -0.86;
+//                 matrix[2][0] = 0.86;  matrix[2][2] = 0.5; 
+//                // count=0;
+//	        }
+//	        
+//	        if (count == 220)
+//	        {
+//	        	 matrix[0][0] = 0.86;  matrix[0][2] = -0.5;
+//                 matrix[2][0] = 0.5;  matrix[2][2] = 0.86; 
+//                // count = 0;
+//	        }
+//	        
+//            if (count == 240)
+//	        {
+//	        	 matrix[0][0] = 1.0;  matrix[0][2] = 0.0;
+//                 matrix[2][0] = 0.0;  matrix[2][2] = 1.0; 
+//                 count = 0;
+//	        } 
+
+
+  
+ 
+//// 
+////  // Write transformation matrix to hardware. 
+  //xil_printf("Setting up Screen Translation Matrix\n\r"); 
+//  
+  if ( (count%20) == 0)
+  {
+  
+  matrix_float_ptr = &matrix_float; 
+  for (i=0; i<=3; i++) { 
+    for (j=0; j<=3; j++) { 
+      matrix_float   = matrix[i][j]; 
+      matrix_int_ptr = (int*)&matrix_float; 
+      if (j==0) { 
+        XIo_Out32(GPU_MATRIX_C0_DATA, *matrix_int_ptr);           
+      } else if (j==1) { 
+        XIo_Out32(GPU_MATRIX_C1_DATA, *matrix_int_ptr); 
+      } else if (j==2) { 
+        XIo_Out32(GPU_MATRIX_C2_DATA, *matrix_int_ptr); 
+      } else { 
+        XIo_Out32(GPU_MATRIX_C3_DATA, *matrix_int_ptr); 
+      	  XIo_Out32(GPU_MATRIX_ADDR, (0x00 | i));
+		  XIo_Out32(GPU_MATRIX_WRITE,  1);
+		   XIo_Out32(GPU_MATRIX_WRITE,  0);
+      }  
+    } 
+  } 
+  }
+  
+		XIo_Out32(vertex_texcoord, 0);
+		//XIo_Out32(clc_scr, 1); 
+       	//XIo_Out32(clc_scr, 0);
+			
+	for(i=0; i<12; i++){
+		//XIo_Out32(GPU_COLOR_POINT, 0xff0000ff);	
+		read_statue = XIo_In32(GPU_SCRATCH);
+		while(read_statue==0){read_statue = XIo_In32(GPU_SCRATCH);} 
+		x0_int_ptr = (int*)&x0[f0[i]]; 
+		y0_int_ptr = (int*)&y0[f0[i]]; 
+		z0_int_ptr = (int*)&z0[f0[i]];
+		XIo_Out32(GPU_X_POINT, *x0_int_ptr); 
+		XIo_Out32(GPU_Y_POINT, *y0_int_ptr); 
+		XIo_Out32(GPU_Z_POINT, *z0_int_ptr); 
+		XIo_Out32(GPU_Tx_coord, (int)tx[t0[i]]);	
+		XIo_Out32(GPU_Ty_coord, (int)ty[t0[i]]);
+		XIo_Out32(GPU_POINT_TRIG, 0x1);
+		XIo_Out32(GPU_POINT_TRIG, 0x0);
+		
+		//XIo_Out32(GPU_COLOR_POINT, 0xff0000ff);	
+		read_statue = XIo_In32(GPU_SCRATCH);
+		while(read_statue==0){read_statue = XIo_In32(GPU_SCRATCH);} 
+		x0_int_ptr = (int*)&x0[f1[i]]; 
+		y0_int_ptr = (int*)&y0[f1[i]]; 
+		z0_int_ptr = (int*)&z0[f1[i]];  
+		XIo_Out32(GPU_X_POINT, *x0_int_ptr); 
+		XIo_Out32(GPU_Y_POINT, *y0_int_ptr); 
+		XIo_Out32(GPU_Z_POINT, *z0_int_ptr); 
+		XIo_Out32(GPU_Tx_coord, (int)tx[t1[i]]);	
+		XIo_Out32(GPU_Ty_coord, (int)ty[t1[i]]);
+		XIo_Out32(GPU_POINT_TRIG, 0x1);
+		XIo_Out32(GPU_POINT_TRIG, 0x0);
+		
+		//XIo_Out32(GPU_COLOR_POINT, 0x0000ffff);	
+		read_statue = XIo_In32(GPU_SCRATCH);
+		while(read_statue==0){read_statue = XIo_In32(GPU_SCRATCH);} 
+		x0_int_ptr = (int*)&x0[f2[i]]; 
+		y0_int_ptr = (int*)&y0[f2[i]]; 
+		z0_int_ptr = (int*)&z0[f2[i]]; 
+		XIo_Out32(GPU_X_POINT, *x0_int_ptr); 
+		XIo_Out32(GPU_Y_POINT, *y0_int_ptr); 
+		XIo_Out32(GPU_Z_POINT, *z0_int_ptr); 
+		XIo_Out32(GPU_Tx_coord, (int)tx[t2[i]]);	
+		XIo_Out32(GPU_Ty_coord, (int)ty[t2[i]]);
+		XIo_Out32(GPU_POINT_TRIG, 0x1);
+		XIo_Out32(GPU_POINT_TRIG, 0x0);}
+		
+		
+		XIo_Out32(clc_scr, 0); 
+       	XIo_Out32(clc_scr, 1);
+		
+
+
+} 
+
+   #if XPAR_MICROBLAZE_0_USE_DCACHE
+      microblaze_disable_dcache();
+      microblaze_init_dcache_range(0, XPAR_MICROBLAZE_0_DCACHE_BYTE_SIZE);
+   #endif
+
+   #if XPAR_MICROBLAZE_0_USE_ICACHE
+      microblaze_disable_icache();
+      microblaze_init_icache_range(0, XPAR_MICROBLAZE_0_CACHE_BYTE_SIZE);
+   #endif
+
+
+  // print("-- Exiting main() --\r\n");
+   return 0;
+}
+

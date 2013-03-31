@@ -1,0 +1,176 @@
+
+An unexpected exception has been detected in native code outside the VM.
+Unexpected Signal : EXCEPTION_ACCESS_VIOLATION (0xc0000005) occurred at PC=0xA9024EE
+Function=MemPoolSetSmallBlockAllocator+0x1AE
+Library=d:\Xilinx\10.1\EDK\lib\nt\SHSMP.DLL
+
+Current Java thread:
+	at com.xilinx.mdt.edk.platstudio.PlatStudioJni.InitEngine(Native Method)
+	at com.xilinx.mdt.edk.platstudio.PlatStudioJni.InitEngine(PlatStudioJni.java:41)
+	at com.xilinx.mdt.edk.platstudio.PlatStudioJni.InitEngine(PlatStudioJni.java:36)
+	at com.xilinx.mdt.edk.platstudio.PlatStudio.checkIfPsSystemInitialized(PlatStudio.java:20)
+	at com.xilinx.mdt.edk.platstudio.PlatStudio.getSearchPathOpt(PlatStudio.java:77)
+	at com.xilinx.mdt.edk.platstudio.PlatStudio.getAbsoluteSearchPathOpt(PlatStudio.java:85)
+	at com.xilinx.mdt.edk.targetmanager.XMDProcessManager.initXMD(XMDProcessManager.java:265)
+	- locked <0x10045dd8> (a com.xilinx.mdt.edk.targetmanager.XMDProcessManager)
+	at com.xilinx.mdt.edk.targetmanager.XMDProcessManager.init(XMDProcessManager.java:136)
+	at com.xilinx.mdt.edk.targetmanager.XMDProcessManager.<init>(XMDProcessManager.java:129)
+	at com.xilinx.mdt.edk.targetmanager.XMDProcessManager.getTheInstance(XMDProcessManager.java:95)
+	at com.xilinx.mdt.edk.targetmanager.ui.XMDConsoleView.createPartControl(XMDConsoleView.java:162)
+	at org.eclipse.ui.internal.ViewReference.createPartHelper(ViewReference.java:305)
+	at org.eclipse.ui.internal.ViewReference.createPart(ViewReference.java:180)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:552)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:283)
+	at org.eclipse.ui.internal.ViewPane.setVisible(ViewPane.java:512)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:126)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:269)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:391)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1102)
+	at org.eclipse.ui.internal.PartStack.createControl(PartStack.java:591)
+	at org.eclipse.ui.internal.PartStack.createControl(PartStack.java:528)
+	at org.eclipse.ui.internal.PartSashContainer.createControl(PartSashContainer.java:485)
+	at org.eclipse.ui.internal.PerspectiveHelper.activate(PerspectiveHelper.java:230)
+	at org.eclipse.ui.internal.Perspective.onActivate(Perspective.java:813)
+	at org.eclipse.ui.internal.WorkbenchPage.onActivate(WorkbenchPage.java:2201)
+	at org.eclipse.ui.internal.WorkbenchWindow$5.run(WorkbenchWindow.java:2356)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:69)
+	at org.eclipse.ui.internal.WorkbenchWindow.setActivePage(WorkbenchWindow.java:2338)
+	at org.eclipse.ui.internal.WorkbenchWindow.restoreState(WorkbenchWindow.java:1861)
+	at org.eclipse.ui.internal.Workbench.doRestoreState(Workbench.java:2566)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:1503)
+	at org.eclipse.ui.internal.Workbench.access$12(Workbench.java:1491)
+	at org.eclipse.ui.internal.Workbench$17.run(Workbench.java:1374)
+	at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java:1044)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:783)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:1318)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:700)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1034)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1636)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:367)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:143)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:103)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:226)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:376)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:334)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:278)
+	at org.eclipse.core.launcher.Main.run(Main.java:973)
+	at org.eclipse.core.launcher.Main.main(Main.java:948)
+
+Dynamic libraries:
+0x00400000 - 0x0040B000 	d:\Xilinx\10.1\EDK\java\nt\jre_142\bin\javaw.exe
+0x7C920000 - 0x7C9B6000 	C:\WINDOWS\system32\ntdll.dll
+0x7C800000 - 0x7C91E000 	C:\WINDOWS\system32\kernel32.dll
+0x77DA0000 - 0x77E49000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77E50000 - 0x77EE3000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77FC0000 - 0x77FD1000 	C:\WINDOWS\system32\Secur32.dll
+0x77D10000 - 0x77DA0000 	C:\WINDOWS\system32\USER32.dll
+0x77EF0000 - 0x77F39000 	C:\WINDOWS\system32\GDI32.dll
+0x77BE0000 - 0x77C38000 	C:\WINDOWS\system32\MSVCRT.dll
+0x76300000 - 0x7631D000 	C:\WINDOWS\system32\IMM32.DLL
+0x62C20000 - 0x62C29000 	C:\WINDOWS\system32\LPK.DLL
+0x73FA0000 - 0x7400B000 	C:\WINDOWS\system32\USP10.dll
+0x08000000 - 0x08139000 	d:\Xilinx\10.1\EDK\java\nt\jre_142\bin\client\jvm.dll
+0x76B10000 - 0x76B3A000 	C:\WINDOWS\system32\WINMM.dll
+0x10000000 - 0x10007000 	d:\Xilinx\10.1\EDK\java\nt\jre_142\bin\hpi.dll
+0x009A0000 - 0x009AE000 	d:\Xilinx\10.1\EDK\java\nt\jre_142\bin\verify.dll
+0x009B0000 - 0x009C9000 	d:\Xilinx\10.1\EDK\java\nt\jre_142\bin\java.dll
+0x009D0000 - 0x009DD000 	d:\Xilinx\10.1\EDK\java\nt\jre_142\bin\zip.dll
+0x02EE0000 - 0x02EEF000 	D:\Xilinx\10.1\EDK\java\nt\jre_142\bin\net.dll
+0x71A20000 - 0x71A37000 	C:\WINDOWS\system32\WS2_32.dll
+0x71A10000 - 0x71A18000 	C:\WINDOWS\system32\WS2HELP.dll
+0x02F30000 - 0x02F38000 	D:\Xilinx\10.1\EDK\java\nt\jre_142\bin\nio.dll
+0x03C00000 - 0x03C50000 	D:\xiao\test\cpu_0\SDK_projects\.SDK_metadata\.config\org.eclipse.osgi\bundles\67\1\.cp\swt-win32-3139.dll
+0x76990000 - 0x76ACE000 	C:\WINDOWS\system32\ole32.dll
+0x5D170000 - 0x5D20A000 	C:\WINDOWS\system32\COMCTL32.dll
+0x76320000 - 0x76367000 	C:\WINDOWS\system32\comdlg32.dll
+0x7D590000 - 0x7DD84000 	C:\WINDOWS\system32\SHELL32.dll
+0x77F40000 - 0x77FB6000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x770F0000 - 0x7717B000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x77180000 - 0x77283000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202\comctl32.dll
+0x5ADC0000 - 0x5ADF7000 	C:\WINDOWS\system32\uxtheme.dll
+0x74680000 - 0x746CC000 	C:\WINDOWS\system32\MSCTF.dll
+0x73640000 - 0x7366E000 	C:\WINDOWS\system32\msctfime.ime
+0x03E50000 - 0x03E58000 	D:\xiao\test\cpu_0\SDK_projects\.SDK_metadata\.config\org.eclipse.osgi\bundles\42\1\.cp\os\win32\x86\core_3_1_0.dll
+0x719C0000 - 0x719FE000 	C:\WINDOWS\System32\mswsock.dll
+0x76EF0000 - 0x76F17000 	C:\WINDOWS\system32\DNSAPI.dll
+0x76F80000 - 0x76F88000 	C:\WINDOWS\System32\winrnr.dll
+0x76F30000 - 0x76F5C000 	C:\WINDOWS\system32\WLDAP32.dll
+0x76F90000 - 0x76F96000 	C:\WINDOWS\system32\rasadhlp.dll
+0x04080000 - 0x04086000 	D:\Xilinx\10.1\EDK\lib\nt\libMdtJPlatStudio.dll
+0x04090000 - 0x0411E000 	d:\Xilinx\10.1\EDK\lib\nt\libPortability.dll
+0x0A900000 - 0x0A926000 	d:\Xilinx\10.1\EDK\lib\nt\SHSMP.DLL
+0x04120000 - 0x041C4000 	d:\Xilinx\10.1\EDK\lib\nt\stlport.5.1.dll
+0x7C3A0000 - 0x7C41B000 	C:\WINDOWS\system32\MSVCP71.dll
+0x7C340000 - 0x7C396000 	C:\WINDOWS\system32\MSVCR71.dll
+0x041D0000 - 0x041D9000 	d:\Xilinx\10.1\EDK\lib\nt\libPort_Std.dll
+0x041E0000 - 0x041E9000 	d:\Xilinx\10.1\EDK\lib\nt\libThread.dll
+0x041F0000 - 0x041FE000 	d:\Xilinx\10.1\EDK\lib\nt\libpthread.dll
+0x71A40000 - 0x71A4B000 	C:\WINDOWS\system32\WSOCK32.dll
+0x04200000 - 0x04212000 	d:\Xilinx\10.1\EDK\lib\nt\libZlib.dll
+0x04220000 - 0x04229000 	d:\Xilinx\10.1\EDK\lib\nt\libMiniZip.dll
+0x04230000 - 0x0426F000 	d:\Xilinx\10.1\EDK\lib\nt\boost_regex-vc71-mt-p-1_33_1.dll
+0x71A90000 - 0x71AA2000 	C:\WINDOWS\system32\MPR.dll
+0x04270000 - 0x042AA000 	d:\Xilinx\10.1\EDK\lib\nt\libMdtBase.dll
+0x042B0000 - 0x04349000 	d:\Xilinx\10.1\EDK\lib\nt\libtcl84.dll
+0x04350000 - 0x0441D000 	d:\Xilinx\10.1\EDK\lib\nt\libMdtHardware.dll
+0x04420000 - 0x04425000 	d:\Xilinx\10.1\ISE\lib\nt\libXdh_PartAnno.dll
+0x04430000 - 0x046EC000 	d:\Xilinx\10.1\ISE\lib\nt\libXdm.dll
+0x046F0000 - 0x04726000 	d:\Xilinx\10.1\ISE\lib\nt\libPersonalityModule.dll
+0x04730000 - 0x0473B000 	d:\Xilinx\10.1\ISE\lib\nt\libStaticFileParsers.dll
+0x04740000 - 0x0476E000 	d:\Xilinx\10.1\ISE\lib\nt\libUtilities.dll
+0x04770000 - 0x0477C000 	d:\Xilinx\10.1\EDK\lib\nt\libMdtMessage.dll
+0x04780000 - 0x047FC000 	d:\Xilinx\10.1\EDK\lib\nt\libMdtSoftware.dll
+0x04800000 - 0x04857000 	d:\Xilinx\10.1\EDK\lib\nt\libMdtPlatStudio.dll
+0x04860000 - 0x04881000 	d:\Xilinx\10.1\ISE\lib\nt\libCoreu_Interface.dll
+0x04890000 - 0x04A05000 	d:\Xilinx\10.1\ISE\lib\nt\libSecurity.dll
+0x5FDD0000 - 0x5FE25000 	C:\WINDOWS\system32\NETAPI32.dll
+0x04A10000 - 0x04A1B000 	d:\Xilinx\10.1\ISE\lib\nt\libCoreu_Utilities.dll
+0x04A20000 - 0x04A26000 	d:\Xilinx\10.1\EDK\lib\nt\libMdtPlatStudioHelper.dll
+0x75ED0000 - 0x75ED7000 	C:\WINDOWS\System32\drprov.dll
+0x71B90000 - 0x71B9E000 	C:\WINDOWS\System32\ntlanman.dll
+0x71C50000 - 0x71C65000 	C:\WINDOWS\System32\NETUI0.dll
+0x71C10000 - 0x71C50000 	C:\WINDOWS\System32\NETUI1.dll
+0x71C00000 - 0x71C07000 	C:\WINDOWS\System32\NETRAP.dll
+0x71B70000 - 0x71B83000 	C:\WINDOWS\System32\SAMLIB.dll
+0x75EE0000 - 0x75EEA000 	C:\WINDOWS\System32\davclnt.dll
+0x04D60000 - 0x04D85000 	D:\Xilinx\10.1\EDK\lib\nt\libUtilC_MessageDispatcher.dll
+0x04D90000 - 0x04FDA000 	d:\Xilinx\10.1\EDK\lib\nt\libxercesc.dll
+0x74BE0000 - 0x74C0C000 	C:\WINDOWS\system32\oleacc.dll
+0x75FF0000 - 0x76055000 	C:\WINDOWS\system32\MSVCP60.dll
+0x05A10000 - 0x05F59000 	C:\WINDOWS\system32\xpsp2res.dll
+0x6D4C0000 - 0x6D4CA000 	D:\Xilinx\10.1\EDK\eclipse\bin\nt\plugins\org.eclipse.cdt.core.win32_3.0.2\os\win32\x86\spawner.dll
+0x76FA0000 - 0x7701F000 	C:\WINDOWS\system32\CLBCATQ.DLL
+0x77020000 - 0x770BA000 	C:\WINDOWS\system32\COMRes.dll
+0x77BD0000 - 0x77BD8000 	C:\WINDOWS\system32\VERSION.dll
+0x74CF0000 - 0x74D81000 	C:\WINDOWS\system32\mlang.dll
+0x60FD0000 - 0x61025000 	C:\WINDOWS\system32\hnetcfg.dll
+0x71A00000 - 0x71A08000 	C:\WINDOWS\System32\wshtcpip.dll
+0x76C60000 - 0x76C88000 	C:\WINDOWS\system32\imagehlp.dll
+0x68D60000 - 0x68E01000 	C:\WINDOWS\system32\DBGHELP.dll
+0x76BC0000 - 0x76BCB000 	C:\WINDOWS\system32\PSAPI.DLL
+
+Heap at VM Abort:
+Heap
+ def new generation   total 768K, used 306K [0x10010000, 0x100e0000, 0x104f0000)
+  eden space 704K,  34% used [0x10010000, 0x1004ca38, 0x100c0000)
+  from space 64K, 100% used [0x100d0000, 0x100e0000, 0x100e0000)
+  to   space 64K,   0% used [0x100c0000, 0x100c0000, 0x100d0000)
+ tenured generation   total 9340K, used 6539K [0x104f0000, 0x10e0f000, 0x14010000)
+   the space 9340K,  70% used [0x104f0000, 0x10b52e70, 0x10b53000, 0x10e0f000)
+ compacting perm gen  total 19968K, used 19727K [0x14010000, 0x15390000, 0x18010000)
+   the space 19968K,  98% used [0x14010000, 0x15353c98, 0x15353e00, 0x15390000)
+
+Local Time = Sat Dec 04 15:21:48 2010
+Elapsed Time = 7
+#
+# The exception above was detected in native code outside the VM
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_05-b04 mixed mode)
+#

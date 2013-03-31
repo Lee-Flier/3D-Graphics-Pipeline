@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.xilinx.mdt.edk.launch.localCLaunch">
+<intAttribute key="com.xilinx.mdt.edk.launch.DEVICE_RESET" value="1"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.xilinx.mdt.edk.debug.XMDCDebugger"/>
+<stringAttribute key="com.xilinx.mdt.edk.launch.PROGRAM_BINSIZE" value="4"/>
+<booleanAttribute key="com.xilinx.mdt.edk.launch.ATTR_REMOTE_DEBUG" value="false"/>
+<booleanAttribute key="com.xilinx.mdt.edk.launch.ENABLE_PROFILING" value="false"/>
+<booleanAttribute key="com.xilinx.mdt.edk.launch.ATTR_XMD_CONNECT_OPTIONS_ADVANCED" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<stringAttribute key="com.xilinx.mdt.edk.launch.FREE_ADDR" value=""/>
+<stringAttribute key="com.xilinx.mdt.edk.launch.ATTR_REMOTE_HOST" value="127.0.0.1"/>
+<stringAttribute key="com.xilinx.mdt.edk.launch.DATA_FILES" value=""/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<booleanAttribute key="com.xilinx.mdt.edk.launch.DOWNLOAD_PROGRAM" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="TestApp_Memory"/>
+<stringAttribute key="com.xilinx.mdt.edk.launch.ATTR_XMD_CONNECT_OPTIONS" value="connect mb mdm -debugdevice cpunr 1"/>
+<booleanAttribute key="org.eclipse.cdt.launch.ENABLE_VARIABLE_BOOKKEEPING" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/TestApp_Memory.elf"/>
+<stringAttribute key="com.xilinx.mdt.edk.launch.SAMPLING_FREQ" value="10000"/>
+<booleanAttribute key="com.xilinx.mdt.edk.launch.SHOW_RESULTS" value="true"/>
+<intAttribute key="com.xilinx.mdt.edk.launch.ATTR_REMOTE_PORT" value="2350"/>
+</launchConfiguration>

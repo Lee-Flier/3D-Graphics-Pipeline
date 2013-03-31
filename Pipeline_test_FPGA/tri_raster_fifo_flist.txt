@@ -1,0 +1,12 @@
+# Output products list for <tri_raster_fifo>
+tri_raster_fifo.asy
+tri_raster_fifo.ngc
+tri_raster_fifo.sym
+tri_raster_fifo.v
+tri_raster_fifo.veo
+tri_raster_fifo.vhd
+tri_raster_fifo.vho
+tri_raster_fifo.xco
+tri_raster_fifo_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+tri_raster_fifo_flist.txt
+tri_raster_fifo_xmdf.tcl

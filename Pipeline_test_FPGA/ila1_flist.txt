@@ -1,0 +1,12 @@
+# Output products list for <ila1>
+ila1.asy
+ila1.cdc
+ila1.ncf
+ila1.ngc
+ila1.v
+ila1.veo
+ila1.vhd
+ila1.vho
+ila1.xco
+ila1_flist.txt
+ila1_xmdf.tcl

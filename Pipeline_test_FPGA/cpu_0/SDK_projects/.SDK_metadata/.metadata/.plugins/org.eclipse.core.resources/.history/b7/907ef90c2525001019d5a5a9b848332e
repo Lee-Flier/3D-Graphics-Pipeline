@@ -1,0 +1,9 @@
+Release 10.1.03 - elfcheck Xilinx EDK 10.1.03
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -noheader -mhs D:/xiao/test/cpu_0/cpu_0.mhs -p
+xc5vlx110tff1136-1 -xmpdir D:/xiao/test/cpu_0 -pe microblaze_0
+TestApp_Memory.elf 
+
+ELF file	: TestApp_Memory.elf
+elfcheck passed!

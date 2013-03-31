@@ -1,0 +1,12 @@
+# Output products list for <fifo_linecreator>
+fifo_linecreator.asy
+fifo_linecreator.ngc
+fifo_linecreator.sym
+fifo_linecreator.v
+fifo_linecreator.veo
+fifo_linecreator.vhd
+fifo_linecreator.vho
+fifo_linecreator.xco
+fifo_linecreator_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+fifo_linecreator_flist.txt
+fifo_linecreator_xmdf.tcl

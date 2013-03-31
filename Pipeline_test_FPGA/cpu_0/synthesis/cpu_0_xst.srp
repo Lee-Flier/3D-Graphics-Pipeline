@@ -1,0 +1,905 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/virtex5/data/virtex5.acd> with local file <c:/Xilinx/10.1/ISE/virtex5/data/virtex5.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "cpu_0_xst.prj"
+Verilog Include Directory          : {"D:\gpu_test_v3_1122_20110621\gpu_test_20110813\cpu_0\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxReferenceDesigns\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc5vlx110tff1136-1
+Output File Name                   : "../implementation/cpu_0.ngc"
+
+---- Source Options
+Top Module Name                    : cpu_0
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/cpu_0/hdl/cpu_0.vhd" in Library work.
+Entity <cpu_0> compiled.
+Entity <cpu_0> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <cpu_0> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <cpu_0> in library <work> (Architecture <STRUCTURE>).
+Entity <cpu_0> analyzed. Unit <cpu_0> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <cpu_0>.
+    Related source file is "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/cpu_0/hdl/cpu_0.vhd".
+Unit <cpu_0> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/microblaze_0_wrapper.ngc>.
+Reading core <../implementation/mb_plb_wrapper.ngc>.
+Reading core <../implementation/ilmb_wrapper.ngc>.
+Reading core <../implementation/dlmb_wrapper.ngc>.
+Reading core <../implementation/dlmb_cntlr_wrapper.ngc>.
+Reading core <../implementation/ilmb_cntlr_wrapper.ngc>.
+Reading core <../implementation/lmb_bram_wrapper.ngc>.
+Reading core <../implementation/rs232_uart_1_wrapper.ngc>.
+Reading core <../implementation/push_buttons_5bit_wrapper.ngc>.
+Reading core <../implementation/iic_eeprom_wrapper.ngc>.
+Reading core <../implementation/ddr2_sdram_wrapper.ngc>.
+Reading core <../implementation/sysace_compactflash_wrapper.ngc>.
+Reading core <../implementation/clock_generator_0_wrapper.ngc>.
+Reading core <../implementation/debug_module_wrapper.ngc>.
+Reading core <../implementation/proc_sys_reset_0_wrapper.ngc>.
+Reading core <../implementation/register_control_0_wrapper.ngc>.
+Loading core <microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
+Loading core <mb_plb_wrapper> for timing and area information for instance <mb_plb>.
+Loading core <ilmb_wrapper> for timing and area information for instance <ilmb>.
+Loading core <dlmb_wrapper> for timing and area information for instance <dlmb>.
+Loading core <dlmb_cntlr_wrapper> for timing and area information for instance <dlmb_cntlr>.
+Loading core <ilmb_cntlr_wrapper> for timing and area information for instance <ilmb_cntlr>.
+Loading core <lmb_bram_wrapper> for timing and area information for instance <lmb_bram>.
+Loading core <rs232_uart_1_wrapper> for timing and area information for instance <RS232_Uart_1>.
+Loading core <push_buttons_5bit_wrapper> for timing and area information for instance <Push_Buttons_5Bit>.
+Loading core <iic_eeprom_wrapper> for timing and area information for instance <IIC_EEPROM>.
+Loading core <ddr2_sdram_wrapper> for timing and area information for instance <DDR2_SDRAM>.
+Loading core <sysace_compactflash_wrapper> for timing and area information for instance <SysACE_CompactFlash>.
+Loading core <clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
+Loading core <debug_module_wrapper> for timing and area information for instance <debug_module>.
+Loading core <proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading core <register_control_0_wrapper> for timing and area information for instance <register_control_0>.
+Loading device for application Rf_Device from file '5vlx110t.nph' in environment c:\Xilinx\10.1\ISE;C:\Xilinx\10.1\EDK.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <cpu_0> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[35].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[13].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[33].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[11].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[41].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[19].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[39].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[17].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[37].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[15].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[42].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[20].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[38].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[16].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[38].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[16].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[36].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[14].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Data_Flow_I/FPU_I/mem_Exp_absAsubB_2_8> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Data_Flow_I/FPU_I/mem_Exp_absAsubB_2_8_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[34].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[12].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[41].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[19].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[41].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[19].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[39].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[17].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[37].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[15].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[42].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[20].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[35].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[13].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[36].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[14].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[34].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[12].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[40].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[18].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[39].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[17].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[39].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[17].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[42].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[20].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[37].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[15].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[35].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[13].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[33].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[11].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[33].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[11].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[40].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[18].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[38].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[16].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[36].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[14].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[42].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[20].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[37].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[15].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[35].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[13].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[33].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[11].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[41].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[19].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[40].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[18].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[40].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[18].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[38].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[16].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[36].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[14].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[34].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[12].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Data_Flow_I/FPU_I/mem_absAgtB_2_0> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Data_Flow_I/FPU_I/mem_absAgtB_2_0_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[34].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[12].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 9 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[6].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[5].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 2 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/dqs_rst_n_r> in Unit <DDR2_SDRAM> is equivalent to the following 7 FFs/Latches : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[4].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[5].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[6].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/dqs_rst_n_r> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/Rst_tocore_5> in Unit <DDR2_SDRAM> is equivalent to the following 3 FFs/Latches : <DDR2_SDRAM/Rst_tocore_4> <DDR2_SDRAM/Rst_tocore_1> <DDR2_SDRAM/Rst_tocore_0> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_READ_MODULE/sig_sl_rdack_i> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_READ_MODULE/sig_sl_rdack> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_0> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_0_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_ADDRESS_DECODER/CLOCK_TO_N_SAMPLE_CIRCUIT/sc2wr_sample_cycle_i> in Unit <DDR2_SDRAM> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_ADDRESS_DECODER/CLOCK_TO_N_SAMPLE_CIRCUIT/sc2rd_sample_cycle_i> <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_ADDRESS_DECODER/CLOCK_TO_N_SAMPLE_CIRCUIT/sc2ad_sample_cycle_i> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/InitDone_i2_0> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/mpmc_core_0/InitDone> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[0].u_iob_dm/u_dm_ce> in Unit <DDR2_SDRAM> is equivalent to the following 7 FFs/Latches : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[1].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[2].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[3].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[4].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[5].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[6].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[7].u_iob_dm/u_dm_ce> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_2> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_2_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_1> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_1_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_25> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_25_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_16> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_16_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_17> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_17_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_28> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_29> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_29_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_5> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_5_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_12> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_12_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_13> in Unit <register_control_0> is equivalent to the following 2 FFs/Latches : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_13_1> <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_13_2> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_7> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_7_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_18> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_18_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_23> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_23_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_8> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_8_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_19> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_19_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[35].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[13].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[33].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[11].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[41].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[19].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[39].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[17].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[37].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[15].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[42].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[20].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[38].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[16].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[38].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[16].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[36].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[14].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Data_Flow_I/FPU_I/mem_Exp_absAsubB_2_8> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Data_Flow_I/FPU_I/mem_Exp_absAsubB_2_8_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[34].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[12].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[41].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[19].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[41].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[19].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[39].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[17].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[37].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[15].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[42].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[20].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[35].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[13].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[36].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[14].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[34].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[12].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[40].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[18].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[39].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[17].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[39].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[17].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[42].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[20].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[37].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[15].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[35].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[13].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[33].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[11].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[33].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[11].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[40].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[18].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[38].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[16].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[36].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[14].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[42].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[20].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[37].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[15].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[35].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[13].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[33].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[11].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[41].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[19].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[40].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[18].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[40].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[18].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[38].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[1].The_IBuffers_DFF[16].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[36].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[2].The_IBuffers_DFF[14].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[34].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[3].The_IBuffers_DFF[12].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Data_Flow_I/FPU_I/mem_absAgtB_2_0> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Data_Flow_I/FPU_I/mem_absAgtB_2_0_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[34].PC_Buffer_FDRE> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers.The_IBuffers[0].The_IBuffers_DFF[12].PC_Buffer_FDRE> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 2 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 9 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[6].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[5].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/dqs_rst_n_r> in Unit <DDR2_SDRAM> is equivalent to the following 7 FFs/Latches : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[4].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[5].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[6].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/dqs_rst_n_r> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/Rst_tocore_5> in Unit <DDR2_SDRAM> is equivalent to the following 3 FFs/Latches : <DDR2_SDRAM/Rst_tocore_4> <DDR2_SDRAM/Rst_tocore_1> <DDR2_SDRAM/Rst_tocore_0> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_READ_MODULE/sig_sl_rdack_i> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_READ_MODULE/sig_sl_rdack> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_0> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_0_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_ADDRESS_DECODER/CLOCK_TO_N_SAMPLE_CIRCUIT/sc2wr_sample_cycle_i> in Unit <DDR2_SDRAM> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_ADDRESS_DECODER/CLOCK_TO_N_SAMPLE_CIRCUIT/sc2rd_sample_cycle_i> <DDR2_SDRAM/PLB_0_INST.plbv46_pim_0/comp_plbv46_pim/GENERATE_SINGLES_PLBV46_PIM.PIM_ADDRESS_DECODER/CLOCK_TO_N_SAMPLE_CIRCUIT/sc2ad_sample_cycle_i> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/InitDone_i2_0> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/mpmc_core_0/InitDone> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[0].u_iob_dm/u_dm_ce> in Unit <DDR2_SDRAM> is equivalent to the following 7 FFs/Latches : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[1].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[2].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[3].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[4].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[5].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[6].u_iob_dm/u_dm_ce> <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dm_inst.gen_dm[7].u_iob_dm/u_dm_ce> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_2> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_2_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_1> in Unit <DDR2_SDRAM> is equivalent to the following FF/Latch : <DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_calib_0/count_gate_1_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_25> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_25_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_16> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_16_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_17> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_17_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_28> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_29> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_29_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_5> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_5_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_12> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_12_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_13> in Unit <register_control_0> is equivalent to the following 2 FFs/Latches : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_13_1> <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_13_2> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_7> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_7_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_18> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_18_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_23> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_23_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_8> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_8_1> 
+INFO:Xst:2260 - The FF/Latch <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_19> in Unit <register_control_0> is equivalent to the following FF/Latch : <register_control_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_19_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/cpu_0.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 731
+
+Cell Usage :
+# BELS                             : 7628
+#      BUF                         : 7
+#      GND                         : 18
+#      INV                         : 153
+#      LUT1                        : 108
+#      LUT2                        : 625
+#      LUT3                        : 1098
+#      LUT4                        : 942
+#      LUT5                        : 1171
+#      LUT6                        : 2244
+#      LUT6_2                      : 31
+#      MULT_AND                    : 12
+#      MUXCY                       : 327
+#      MUXCY_L                     : 208
+#      MUXF5                       : 118
+#      MUXF7                       : 193
+#      VCC                         : 15
+#      XORCY                       : 358
+# FlipFlops/Latches                : 8149
+#      FD                          : 1734
+#      FD_1                        : 11
+#      FDC                         : 83
+#      FDC_1                       : 5
+#      FDCE                        : 101
+#      FDCPE                       : 24
+#      FDE                         : 514
+#      FDE_1                       : 5
+#      FDP                         : 43
+#      FDR                         : 1666
+#      FDR_1                       : 3
+#      FDRE                        : 2764
+#      FDRE_1                      : 1
+#      FDRS                        : 119
+#      FDRSE                       : 394
+#      FDRSE_1                     : 136
+#      FDS                         : 253
+#      FDS_1                       : 2
+#      FDSE                        : 72
+#      IDDR_2CLK                   : 72
+#      LDC                         : 1
+#      ODDR                        : 146
+# RAMS                             : 29
+#      RAM32M                      : 16
+#      RAMB16                      : 9
+#      RAMB36_EXP                  : 4
+# Shift Registers                  : 208
+#      SRL16                       : 80
+#      SRL16E                      : 50
+#      SRLC16E                     : 61
+#      SRLC32E                     : 17
+# Clock Buffers                    : 8
+#      BUFG                        : 7
+#      BUFGP                       : 1
+# IO Buffers                       : 720
+#      IBUF                        : 67
+#      IOBUF                       : 64
+#      IOBUFDS                     : 8
+#      OBUF                        : 579
+#      OBUFDS                      : 2
+# DSPs                             : 5
+#      DSP48E                      : 5
+# Others                           : 93
+#      BSCAN_VIRTEX5               : 1
+#      BUFIO                       : 8
+#      IDELAYCTRL                  : 3
+#      IODELAY                     : 80
+#      PLL_ADV                     : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx110tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            8059  out of  69120    11%  
+ Number of Slice LUTs:                 6644  out of  69120     9%  
+    Number used as Logic:              6372  out of  69120     9%  
+    Number used as Memory:              272  out of  17920     1%  
+       Number used as RAM:               64
+       Number used as SRL:              208
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  12050
+   Number with an unused Flip Flop:    3991  out of  12050    33%  
+   Number with an unused LUT:          5406  out of  12050    44%  
+   Number of fully used LUT-FF pairs:  2653  out of  12050    22%  
+   Number of unique control sets:       761
+
+IO Utilization: 
+ Number of IOs:                         731
+ Number of bonded IOBs:                 639  out of    640    99%  
+    IOB Flip Flops/Latches:              90
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                9  out of    148     6%  
+    Number using Block RAM only:          9
+ Number of BUFG/BUFGCTRLs:                8  out of     32    25%  
+ Number of DSP48Es:                       5  out of     64     7%  
+ Number of PLL_ADVs:                      1  out of      6    16%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)  | Load  |
+---------------------------------------------------+------------------------+-------+
+clock_generator_0/clock_generator_0/PLL0_CLK_OUT<2>| BUFG                   | 5709  |
+debug_module/debug_module/drck_i                   | BUFG                   | 202   |
+debug_module/debug_module/update1                  | BUFG                   | 32    |
+clock_generator_0/clock_generator_0/PLL0_CLK_OUT<0>| BUFG                   | 1960  |
+clock_generator_0/clock_generator_0/PLL0_CLK_OUT<1>| BUFG                   | 315   |
+fpga_0_SysACE_CompactFlash_SysACE_CLK_pin          | BUFGP                  | 92    |
+---------------------------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                             | Buffer(FF name)                                                                                                                                                                | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+mb_plb/SPLB_Rst<4>(mb_plb/mb_plb/GEN_SPLB_RST[4].I_SPLB_RST:Q)                                                                                                             | NONE(SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/SYNC_2_CLOCKS_I/MEM_DQ_T_GEN[4].DQT_REG1)                                                                     | 86    |
+IIC_EEPROM/IIC_EEPROM/x_iic/IIC_CONTROL_I/I2CDATA_REG/clr_inv(IIC_EEPROM/IIC_EEPROM/x_iic/IIC_CONTROL_I/I2CHEADER_REG/clr_inv1_INV_0:O)                                    | NONE(IIC_EEPROM/IIC_EEPROM/x_iic/IIC_CONTROL_I/scl_d1)                                                                                                                         | 84    |
+DDR2_SDRAM/SDMA_CTRL3_Sl_MWrErr<0>(DDR2_SDRAM/XST_GND:G)                                                                                                                   | NONE(DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/mpmc_data_path_0/gen_read_fifos[0].gen_fifos.mpmc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_brams[2].bram)| 55    |
+debug_module/debug_module/MDM_Core_I1/Config_Reg_Acst_inv(debug_module/debug_module/MDM_Core_I1/Config_Reg_Acst_inv1_INV_0:O)                                              | NONE(debug_module/debug_module/MDM_Core_I1/Config_Reg_Acst_inv_shift12)                                                                                                        | 23    |
+DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/rst_phy(DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/rst_phy:Q)                                                                                     | NONE(DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_ctl_io/u_ff_we_n)                                                                                   | 17    |
+debug_module/debug_module/MDM_Core_I1/SEL_inv(debug_module/debug_module/MDM_Core_I1/SEL_inv1_INV_0:O)                                                                      | NONE(debug_module/debug_module/MDM_Core_I1/TDI_Shifter_2)                                                                                                                      | 12    |
+SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/SYNC_2_CLOCKS_I/done3(SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/SYNC_2_CLOCKS_I/DONE_REG3:Q) | NONE(SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/SYNC_2_CLOCKS_I/RDCE_REG1)                                                                                    | 6     |
+dlmb/LMB_Rst(dlmb/dlmb/POR_FF_I:Q)                                                                                                                                         | NONE(dlmb_cntlr/dlmb_cntlr/lmb_addrstrobe_i)                                                                                                                                   | 2     |
+ilmb/LMB_Rst(ilmb/ilmb/POR_FF_I:Q)                                                                                                                                         | NONE(ilmb_cntlr/ilmb_cntlr/lmb_addrstrobe_i)                                                                                                                                   | 2     |
+mb_plb/SPLB_Rst<1>(mb_plb/mb_plb/GEN_SPLB_RST[1].I_SPLB_RST:Q)                                                                                                             | NONE(Push_Buttons_5Bit/Push_Buttons_5Bit/gpio_core_1/iGPIO_xferAck)                                                                                                            | 2     |
+microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Command_Reg_Rst(microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Command_Reg_Rst:Q)           | NONE(microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/command_reg_1)                                                                                             | 2     |
+debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/data_cmd_n(debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/data_cmd_n1_INV_0:O)| NONE(debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/execute)                                                                                            | 1     |
+debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/sel_n(debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/sel_n1:O)                | NONE(debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/FDC_I)                                                                                              | 1     |
+debug_module/debug_module/MDM_Core_I1/reset_RX_FIFO(debug_module/debug_module/MDM_Core_I1/reset_RX_FIFO:Q)                                                                 | NONE(debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/Have_UARTs.RX_FIFO_I/data_Exists_I)                                                                 | 1     |
+debug_module/debug_module/MDM_Core_I1/reset_TX_FIFO(debug_module/debug_module/MDM_Core_I1/reset_TX_FIFO:Q)                                                                 | NONE(debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/Have_UARTs.TX_FIFO_I/data_Exists_I)                                                                 | 1     |
+microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/continue_from_brk(microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/continue_from_brk:Q)       | NONE(microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/continue_from_brk_TClk)                                                                                    | 1     |
+microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/start_single_step(microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/start_single_step:Q)       | NONE(microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/single_Step_TClk)                                                                                          | 1     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 6.198ns (Maximum Frequency: 161.342MHz)
+   Minimum input arrival time before clock: 2.750ns
+   Maximum output required time after clock: 6.964ns
+   Maximum combinational path delay: 1.154ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_generator_0/clock_generator_0/PLL0_CLK_OUT<2>'
+  Clock period: 5.529ns (frequency: 180.865MHz)
+  Total number of paths / destination ports: 452961 / 12830
+-------------------------------------------------------------------------
+Delay:               5.529ns (Levels of Logic = 5)
+  Source:            microblaze_0/microblaze_0/Performance.Data_Flow_I/FPU_I/mem_MantA_2_31 (FF)
+  Destination:       microblaze_0/microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_MantB_3_34 (FF)
+  Source Clock:      clock_generator_0/clock_generator_0/PLL0_CLK_OUT<2> rising
+  Destination Clock: clock_generator_0/clock_generator_0/PLL0_CLK_OUT<2> rising
+
+  Data Path: microblaze_0/microblaze_0/Performance.Data_Flow_I/FPU_I/mem_MantA_2_31 to microblaze_0/microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_MantB_3_34
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.471   1.080  microblaze_0/Performance.Data_Flow_I/FPU_I/mem_MantA_2_31 (microblaze_0/Performance.Data_Flow_I/FPU_I/mem_MantA_2<31>)
+     LUT6:I0->O            5   0.094   0.732  microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_rot_mux1<31>1 (microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_rot_mux1<31>)
+     LUT5:I2->O            5   0.094   0.811  microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_rot_mux2<11>1 (microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_rot_mux2<11>)
+     LUT6:I2->O            1   0.094   0.576  microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_rot_mux3<11>1 (microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_rot_mux3<11>)
+     LUT6:I4->O            1   0.094   0.480  microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_mant_sticky_3_cmb52 (microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_mant_sticky_3_cmb52)
+     LUT5:I4->O            1   0.094   0.336  microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_mant_sticky_3_cmb164 (microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_mant_sticky_3_cmb164)
+     FDRS:S                    0.573          microblaze_0/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_ADDSUB_I/mem_MantB_3_34
+    ----------------------------------------
+    Total                      5.529ns (1.514ns logic, 4.015ns route)
+                                       (27.4% logic, 72.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'debug_module/debug_module/drck_i'
+  Clock period: 6.198ns (frequency: 161.342MHz)
+  Total number of paths / destination ports: 301 / 249
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 4)
+  Source:            debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/SYNC_FDRE (FF)
+  Destination:       microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/shift_Count_0 (FF)
+  Source Clock:      debug_module/debug_module/drck_i falling
+  Destination Clock: debug_module/debug_module/drck_i rising
+
+  Data Path: debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/SYNC_FDRE to microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/shift_Count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE_1:C->Q           1   0.467   0.973  PLB_Interconnect.JTAG_CONTROL_I/SYNC_FDRE (PLB_Interconnect.JTAG_CONTROL_I/sync)
+     LUT6:I1->O            9   0.094   0.380  PLB_Interconnect.JTAG_CONTROL_I/shifting_Data (Dbg_Shift_7)
+     end scope: 'debug_module/MDM_Core_I1'
+     end scope: 'debug_module'
+     begin scope: 'microblaze_0'
+     INV:I->O              8   0.238   0.374  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Shift_inv1_INV_0 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Shift_inv)
+     FDR:R                     0.573          microblaze_0/Performance.Use_Debug_Logic.Debug_I1/shift_Count_0
+    ----------------------------------------
+    Total                      3.099ns (1.372ns logic, 1.727ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'debug_module/debug_module/update1'
+  Clock period: 5.724ns (frequency: 174.703MHz)
+  Total number of paths / destination ports: 179 / 37
+-------------------------------------------------------------------------
+Delay:               2.862ns (Levels of Logic = 4)
+  Source:            debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/continue_from_brk_TClk (FF)
+  Source Clock:      debug_module/debug_module/update1 falling
+  Destination Clock: debug_module/debug_module/update1 rising
+
+  Data Path: debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/FDC_I to microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/continue_from_brk_TClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           10   0.467   0.625  PLB_Interconnect.JTAG_CONTROL_I/FDC_I (PLB_Interconnect.JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            7   0.094   1.006  PLB_Interconnect.JTAG_CONTROL_I/Dbg_Reg_En_I<4>1 (Dbg_Reg_En_0<4>)
+     end scope: 'debug_module/MDM_Core_I1'
+     end scope: 'debug_module'
+     begin scope: 'microblaze_0'
+     LUT5:I0->O            6   0.094   0.363  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Control_Reg_En_cmp_eq00001 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Control_Reg_En)
+     FDCE:CE                   0.213          microblaze_0/Performance.Use_Debug_Logic.Debug_I1/continue_from_brk_TClk
+    ----------------------------------------
+    Total                      2.862ns (0.868ns logic, 1.994ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_generator_0/clock_generator_0/PLL0_CLK_OUT<0>'
+  Clock period: 3.753ns (frequency: 266.453MHz)
+  Total number of paths / destination ports: 6559 / 2566
+-------------------------------------------------------------------------
+Delay:               3.753ns (Levels of Logic = 4)
+  Source:            DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/data_delay_d1_32 (FF)
+  Destination:       DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7 (FF)
+  Source Clock:      clock_generator_0/clock_generator_0/PLL0_CLK_OUT<0> rising
+  Destination Clock: clock_generator_0/clock_generator_0/PLL0_CLK_OUT<0> rising
+
+  Data Path: DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/data_delay_d1_32 to DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.471   1.140  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/data_delay_d1_32 (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/data_delay_d1<32>)
+     LUT6:I0->O            1   0.094   0.576  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/gen_data_out[7]_delay_compare<6>1 (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/gen_data_out[7]_delay_compare<6>1)
+     LUT5:I3->O            1   0.094   0.480  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7_or0000168 (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7_or0000168)
+     LUT6:I5->O            1   0.094   0.710  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7_or0000175 (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7_or0000175)
+     LUT4:I1->O            1   0.094   0.000  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7_or00003431 (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7_or0000343)
+     FDS:D                    -0.018          DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_realign_bytes_0/needs_delay_7
+    ----------------------------------------
+    Total                      3.753ns (0.847ns logic, 2.906ns route)
+                                       (22.6% logic, 77.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_generator_0/clock_generator_0/PLL0_CLK_OUT<1>'
+  Clock period: 2.762ns (frequency: 362.056MHz)
+  Total number of paths / destination ports: 799 / 652
+-------------------------------------------------------------------------
+Delay:               1.381ns (Levels of Logic = 0)
+  Source:            DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_write/dq_oe_270_1 (FF)
+  Destination:       DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_write/dq_oe_n_90_r1_1 (FF)
+  Source Clock:      clock_generator_0/clock_generator_0/PLL0_CLK_OUT<1> falling
+  Destination Clock: clock_generator_0/clock_generator_0/PLL0_CLK_OUT<1> rising
+
+  Data Path: DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_write/dq_oe_270_1 to DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_write/dq_oe_n_90_r1_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS_1:C->Q            2   0.467   0.341  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_write/dq_oe_270_1 (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_write/dq_oe_270<1>)
+     FDR:R                     0.573          DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_write/dq_oe_n_90_r1_1
+    ----------------------------------------
+    Total                      1.381ns (1.040ns logic, 0.341ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fpga_0_SysACE_CompactFlash_SysACE_CLK_pin'
+  Clock period: 1.932ns (frequency: 517.598MHz)
+  Total number of paths / destination ports: 162 / 67
+-------------------------------------------------------------------------
+Delay:               1.932ns (Levels of Logic = 2)
+  Source:            SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3 (FF)
+  Destination:       SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3 (FF)
+  Source Clock:      fpga_0_SysACE_CompactFlash_SysACE_CLK_pin rising
+  Destination Clock: fpga_0_SysACE_CompactFlash_SysACE_CLK_pin rising
+
+  Data Path: SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3 to SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.471   1.113  SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3 (SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3)
+     LUT6:I0->O            1   0.094   0.000  SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3-In_G (N9)
+     MUXF7:I1->O           1   0.254   0.000  SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3-In (SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3-In)
+     FDC:D                    -0.018          SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/current_State_FSM_FFd3
+    ----------------------------------------
+    Total                      1.932ns (0.819ns logic, 1.113ns route)
+                                       (42.4% logic, 57.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'debug_module/debug_module/drck_i'
+  Total number of paths / destination ports: 128 / 95
+-------------------------------------------------------------------------
+Offset:              2.750ns (Levels of Logic = 4)
+  Source:            debug_module/debug_module/Use_Virtex5.BSCAN_VIRTEX5_I:SHIFT (PAD)
+  Destination:       microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/shift_Count_0 (FF)
+  Destination Clock: debug_module/debug_module/drck_i rising
+
+  Data Path: debug_module/debug_module/Use_Virtex5.BSCAN_VIRTEX5_I:SHIFT to microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/shift_Count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX5:SHIFT    5   0.000   0.000  debug_module/Use_Virtex5.BSCAN_VIRTEX5_I (bscan_shift)
+     begin scope: 'debug_module/MDM_Core_I1'
+     LUT6:I0->O            9   0.094   0.380  PLB_Interconnect.JTAG_CONTROL_I/shifting_Data (Dbg_Shift_7)
+     end scope: 'debug_module/MDM_Core_I1'
+     end scope: 'debug_module'
+     begin scope: 'microblaze_0'
+     INV:I->O              8   0.238   0.374  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Shift_inv1_INV_0 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Shift_inv)
+     FDR:R                     0.573          microblaze_0/Performance.Use_Debug_Logic.Debug_I1/shift_Count_0
+    ----------------------------------------
+    Total                      2.750ns (1.996ns logic, 0.754ns route)
+                                       (72.6% logic, 27.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generator_0/clock_generator_0/PLL0_CLK_OUT<2>'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              2.301ns (Levels of Logic = 3)
+  Source:            register_control_0_eof_i_pin (PAD)
+  Destination:       register_control_0/register_control_0/USER_LOGIC_I/eof_state (FF)
+  Destination Clock: clock_generator_0/clock_generator_0/PLL0_CLK_OUT<2> rising
+
+  Data Path: register_control_0_eof_i_pin to register_control_0/register_control_0/USER_LOGIC_I/eof_state
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.336  register_control_0_eof_i_pin_IBUF (register_control_0_eof_i_pin_IBUF)
+     begin scope: 'register_control_0'
+     INV:I->O              1   0.238   0.336  register_control_0/USER_LOGIC_I/eof_i_inv1_INV_0 (register_control_0/USER_LOGIC_I/eof_i_inv)
+     FDR:R                     0.573          register_control_0/USER_LOGIC_I/eof_state
+    ----------------------------------------
+    Total                      2.301ns (1.629ns logic, 0.672ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generator_0/clock_generator_0/PLL0_CLK_OUT<0>'
+  Total number of paths / destination ports: 256 / 256
+-------------------------------------------------------------------------
+Offset:              0.341ns (Levels of Logic = 0)
+  Source:            DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[2].u_iob_dq/gen_stg2_0m.u_iddr_dq:Q1 (PAD)
+  Destination:       DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[2].u_iob_dq/gen_stg2_0m.u_ff_stg2a_fall (FF)
+  Destination Clock: clock_generator_0/clock_generator_0/PLL0_CLK_OUT<0> rising
+
+  Data Path: DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[2].u_iob_dq/gen_stg2_0m.u_iddr_dq:Q1 to DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[2].u_iob_dq/gen_stg2_0m.u_ff_stg2a_fall
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IDDR_2CLK:Q1           2   0.000   0.341  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[2].u_iob_dq/gen_stg2_0m.u_iddr_dq (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[2].u_iob_dq/stg1_out_fall_0m)
+     FDRSE:D                  -0.018          DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[2].u_iob_dq/gen_stg2_0m.u_ff_stg2a_fall
+    ----------------------------------------
+    Total                      0.341ns (0.000ns logic, 0.341ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_SysACE_CompactFlash_SysACE_CLK_pin'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.154ns (Levels of Logic = 2)
+  Source:            SysACE_CompactFlash_SysACE_MPD_I_pin<7> (PAD)
+  Destination:       SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/SYNC_2_CLOCKS_I/MEM_DQ_I_GEN[0].MEM_DQ_I_1 (FF)
+  Destination Clock: fpga_0_SysACE_CompactFlash_SysACE_CLK_pin rising
+
+  Data Path: SysACE_CompactFlash_SysACE_MPD_I_pin<7> to SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/SYNC_2_CLOCKS_I/MEM_DQ_I_GEN[0].MEM_DQ_I_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.336  SysACE_CompactFlash_SysACE_MPD_I_pin_7_IBUF (SysACE_CompactFlash_SysACE_MPD_I_pin_7_IBUF)
+     begin scope: 'SysACE_CompactFlash'
+     FDCE:D                   -0.018          SysACE_CompactFlash/I_SYSACE_CONTROLLER/SYNC_2_CLOCKS_I/MEM_DQ_I_GEN[0].MEM_DQ_I_1
+    ----------------------------------------
+    Total                      1.154ns (0.818ns logic, 0.336ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'debug_module/debug_module/update1'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              1.670ns (Levels of Logic = 2)
+  Source:            debug_module/debug_module/Use_Virtex5.BSCAN_VIRTEX5_I:SEL (PAD)
+  Destination:       debug_module/debug_module/MDM_Core_I1/PORT_Selector_1_0 (FF)
+  Destination Clock: debug_module/debug_module/update1 rising
+
+  Data Path: debug_module/debug_module/Use_Virtex5.BSCAN_VIRTEX5_I:SEL to debug_module/debug_module/MDM_Core_I1/PORT_Selector_1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX5:SEL      8   0.000   0.000  debug_module/Use_Virtex5.BSCAN_VIRTEX5_I (debug_module/sel)
+     begin scope: 'debug_module/MDM_Core_I1'
+     LUT5:I0->O            4   0.094   0.352  MDM_SEL1 (MDM_SEL)
+     FDCE:CE                   0.213          PORT_Selector_1_0
+    ----------------------------------------
+    Total                      1.670ns (1.318ns logic, 0.352ns route)
+                                       (78.9% logic, 21.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_generator_0/clock_generator_0/PLL0_CLK_OUT<2>'
+  Total number of paths / destination ports: 738 / 731
+-------------------------------------------------------------------------
+Offset:              4.359ns (Levels of Logic = 3)
+  Source:            IIC_EEPROM/IIC_EEPROM/x_iic/IIC_CONTROL_I/stop_scl_reg (FF)
+  Destination:       IIC_EEPROM_Sda_T_pin (PAD)
+  Source Clock:      clock_generator_0/clock_generator_0/PLL0_CLK_OUT<2> rising
+
+  Data Path: IIC_EEPROM/IIC_EEPROM/x_iic/IIC_CONTROL_I/stop_scl_reg to IIC_EEPROM_Sda_T_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.471   1.006  IIC_EEPROM/x_iic/IIC_CONTROL_I/stop_scl_reg (IIC_EEPROM/x_iic/IIC_CONTROL_I/stop_scl_reg)
+     LUT5:I0->O            1   0.094   0.336  IIC_EEPROM/x_iic/IIC_CONTROL_I/Sda_T1 (Sda_T)
+     end scope: 'IIC_EEPROM'
+     OBUF:I->O                 2.452          IIC_EEPROM_Sda_T_pin_OBUF (IIC_EEPROM_Sda_T_pin)
+    ----------------------------------------
+    Total                      4.359ns (3.017ns logic, 1.342ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_generator_0/clock_generator_0/PLL0_CLK_OUT<0>'
+  Total number of paths / destination ports: 84 / 60
+-------------------------------------------------------------------------
+Offset:              3.395ns (Levels of Logic = 2)
+  Source:            DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/u_oddr_dqs (FF)
+  Destination:       fpga_0_DDR2_SDRAM_DDR2_DQS_n<7> (PAD)
+  Source Clock:      clock_generator_0/clock_generator_0/PLL0_CLK_OUT<0> falling
+
+  Data Path: DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/u_oddr_dqs to fpga_0_DDR2_SDRAM_DDR2_DQS_n<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     ODDR:C->Q             1   0.607   0.336  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/u_oddr_dqs (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/dqs_out)
+     IOBUFDS:I->IOB        0   2.452   0.000  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dqs[7].u_iob_dqs/gen_dqs_iob_ddr2.u_iobuf_dqs (DDR2_DQS_n<7>)
+     end scope: 'DDR2_SDRAM'
+    ----------------------------------------
+    Total                      3.395ns (3.059ns logic, 0.336ns route)
+                                       (90.1% logic, 9.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_SysACE_CompactFlash_SysACE_CLK_pin'
+  Total number of paths / destination ports: 42 / 42
+-------------------------------------------------------------------------
+Offset:              3.259ns (Levels of Logic = 2)
+  Source:            SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/SYSACE_CEN_REG (FF)
+  Destination:       fpga_0_SysACE_CompactFlash_SysACE_CEN_pin (PAD)
+  Source Clock:      fpga_0_SysACE_CompactFlash_SysACE_CLK_pin rising
+
+  Data Path: SysACE_CompactFlash/SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/SYSACE_CEN_REG to fpga_0_SysACE_CompactFlash_SysACE_CEN_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.471   0.336  SysACE_CompactFlash/I_SYSACE_CONTROLLER/MEM_STATE_MACHINE_I/SYSACE_CEN_REG (SysACE_CEN)
+     end scope: 'SysACE_CompactFlash'
+     OBUF:I->O                 2.452          fpga_0_SysACE_CompactFlash_SysACE_CEN_pin_OBUF (fpga_0_SysACE_CompactFlash_SysACE_CEN_pin)
+    ----------------------------------------
+    Total                      3.259ns (2.923ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_generator_0/clock_generator_0/PLL0_CLK_OUT<1>'
+  Total number of paths / destination ports: 136 / 72
+-------------------------------------------------------------------------
+Offset:              3.395ns (Levels of Logic = 2)
+  Source:            DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[63].u_iob_dq/u_oddr_dq (FF)
+  Destination:       fpga_0_DDR2_SDRAM_DDR2_DQ<63> (PAD)
+  Source Clock:      clock_generator_0/clock_generator_0/PLL0_CLK_OUT<1> rising
+
+  Data Path: DDR2_SDRAM/DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[63].u_iob_dq/u_oddr_dq to fpga_0_DDR2_SDRAM_DDR2_DQ<63>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     ODDR:C->Q             1   0.607   0.336  DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[63].u_iob_dq/u_oddr_dq (DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[63].u_iob_dq/dq_out)
+     IOBUF:I->IO               2.452          DDR2_SDRAM/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/gen_dq[63].u_iob_dq/u_iobuf_dq (DDR2_DQ<63>)
+     end scope: 'DDR2_SDRAM'
+    ----------------------------------------
+    Total                      3.395ns (3.059ns logic, 0.336ns route)
+                                       (90.1% logic, 9.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'debug_module/debug_module/update1'
+  Total number of paths / destination ports: 38 / 1
+-------------------------------------------------------------------------
+Offset:              5.469ns (Levels of Logic = 10)
+  Source:            debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       debug_module/debug_module/Use_Virtex5.BSCAN_VIRTEX5_I:TDO (PAD)
+  Source Clock:      debug_module/debug_module/update1 falling
+
+  Data Path: debug_module/debug_module/MDM_Core_I1/PLB_Interconnect.JTAG_CONTROL_I/FDC_I to debug_module/debug_module/Use_Virtex5.BSCAN_VIRTEX5_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           10   0.467   0.625  PLB_Interconnect.JTAG_CONTROL_I/FDC_I (PLB_Interconnect.JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            7   0.094   1.006  PLB_Interconnect.JTAG_CONTROL_I/Dbg_Reg_En_I<4>1 (Dbg_Reg_En_0<4>)
+     end scope: 'debug_module/MDM_Core_I1'
+     end scope: 'debug_module'
+     begin scope: 'microblaze_0'
+     LUT5:I0->O            1   0.094   0.000  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO351 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO351)
+     MUXF7:I1->O           1   0.254   0.789  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO35_f7 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO35)
+     LUT6:I2->O            1   0.094   1.069  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO143 (DBG_TDO)
+     end scope: 'microblaze_0'
+     begin scope: 'debug_module'
+     begin scope: 'debug_module/MDM_Core_I1'
+     LUT6:I0->O            1   0.094   0.789  TDO_i79 (TDO_i79)
+     LUT6:I2->O            0   0.094   0.000  TDO_i225 (TDO)
+     end scope: 'debug_module/MDM_Core_I1'
+    BSCAN_VIRTEX5:TDO          0.000          debug_module/Use_Virtex5.BSCAN_VIRTEX5_I
+    ----------------------------------------
+    Total                      5.469ns (1.191ns logic, 4.278ns route)
+                                       (21.8% logic, 78.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'debug_module/debug_module/drck_i'
+  Total number of paths / destination ports: 158 / 1
+-------------------------------------------------------------------------
+Offset:              6.964ns (Levels of Logic = 9)
+  Source:            microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Use_SRL16.The_Cache_Addresses[5].SRL16E_Cache_I (FF)
+  Destination:       debug_module/debug_module/Use_Virtex5.BSCAN_VIRTEX5_I:TDO (PAD)
+  Source Clock:      debug_module/debug_module/drck_i rising
+
+  Data Path: microblaze_0/microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Use_SRL16.The_Cache_Addresses[5].SRL16E_Cache_I to debug_module/debug_module/Use_Virtex5.BSCAN_VIRTEX5_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16E:CLK->Q         1   1.889   0.973  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Use_SRL16.The_Cache_Addresses[5].SRL16E_Cache_I (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/tdo_config_word1<6>)
+     LUT6:I1->O            1   0.094   0.000  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Mmux_TDO_Config_Word_6 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Mmux_TDO_Config_Word_6)
+     MUXF7:I1->O           1   0.254   0.480  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Mmux_TDO_Config_Word_5_f7 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/Mmux_TDO_Config_Word_5_f7)
+     LUT5:I4->O            1   0.094   0.000  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO352 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO352)
+     MUXF7:I0->O           1   0.251   0.789  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO35_f7 (microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO35)
+     LUT6:I2->O            1   0.094   1.069  microblaze_0/Performance.Use_Debug_Logic.Debug_I1/TDO143 (DBG_TDO)
+     end scope: 'microblaze_0'
+     begin scope: 'debug_module'
+     begin scope: 'debug_module/MDM_Core_I1'
+     LUT6:I0->O            1   0.094   0.789  TDO_i79 (TDO_i79)
+     LUT6:I2->O            0   0.094   0.000  TDO_i225 (TDO)
+     end scope: 'debug_module/MDM_Core_I1'
+    BSCAN_VIRTEX5:TDO          0.000          debug_module/Use_Virtex5.BSCAN_VIRTEX5_I
+    ----------------------------------------
+    Total                      6.964ns (2.864ns logic, 4.100ns route)
+                                       (41.1% logic, 58.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 297 / 297
+-------------------------------------------------------------------------
+Delay:               1.154ns (Levels of Logic = 2)
+  Source:            sys_clk_pin (PAD)
+  Destination:       clock_generator_0/clock_generator_0/Using_PLL0.PLL0_INST/PLL_INST/Using_PLL_ADV.PLL_ADV_inst:CLKIN1 (PAD)
+
+  Data Path: sys_clk_pin to clock_generator_0/clock_generator_0/Using_PLL0.PLL0_INST/PLL_INST/Using_PLL_ADV.PLL_ADV_inst:CLKIN1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.336  sys_clk_pin_IBUF (sys_clk_pin_IBUF)
+     begin scope: 'clock_generator_0'
+    PLL_ADV:CLKIN1             0.000          clock_generator_0/Using_PLL0.PLL0_INST/PLL_INST/Using_PLL_ADV.PLL_ADV_inst
+    ----------------------------------------
+    Total                      1.154ns (0.818ns logic, 0.336ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 59.00 secs
+Total CPU time to Xst completion: 59.55 secs
+ 
+--> 
+
+Total memory usage is 387852 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :  134 (   0 filtered)
+

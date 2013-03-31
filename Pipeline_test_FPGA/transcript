@@ -1,0 +1,145 @@
+# Reading D:/modeltech_6.5/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.5 Jan 22 2009 
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {test_gpu.fdo} 
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package gpu_pkg
+# -- Compiling package body gpu_pkg
+# -- Loading package gpu_pkg
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module v_sync
+# 
+# Top level modules:
+# 	v_sync
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module tri_z_buffer
+# 
+# Top level modules:
+# 	tri_z_buffer
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module tri_vertex_color
+# 
+# Top level modules:
+# 	tri_vertex_color
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module tri_texture_map
+# 
+# Top level modules:
+# 	tri_texture_map
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module tri_raster
+# 
+# Top level modules:
+# 	tri_raster
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package gpu_pkg
+# -- Compiling entity matrix_mult4x4
+# -- Compiling architecture hdl of matrix_mult4x4
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module iic_init
+# 
+# Top level modules:
+# 	iic_init
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module h_sync
+# 
+# Top level modules:
+# 	h_sync
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module dvi_out
+# 
+# Top level modules:
+# 	dvi_out
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package gpu_pkg
+# -- Compiling entity convers_float18_b
+# -- Compiling architecture hdl of convers_float18_b
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module raster_sys
+# 
+# Top level modules:
+# 	raster_sys
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package gpu_pkg
+# -- Compiling entity matrix_transformation
+# -- Compiling architecture hdl of matrix_transformation
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package gpu_pkg
+# -- Compiling entity line_creator
+# -- Compiling architecture behavioral of line_creator
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package gpu_pkg
+# -- Compiling entity float32to18
+# -- Compiling architecture behavioral of float32to18
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package zbt_ctrl_pkg
+# -- Compiling package body zbt_ctrl_pkg
+# -- Loading package zbt_ctrl_pkg
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module user_logic
+# 
+# Top level modules:
+# 	user_logic
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package gpu_pkg
+# -- Compiling entity fifotodvi
+# -- Compiling architecture behavioral of fifotodvi
+# Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package zbt_ctrl_pkg
+# -- Compiling entity test_gpu
+# -- Compiling architecture behavior of test_gpu
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -t 1ps test_gpu glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: test_gpu.vhd(373): (vopt-1130) Port "ver_tex" of entity "fifotodvi" is not in the component being instantiated.
+# ** Error: test_gpu.vhd(373): (vopt-1130) Port "clc_scr" of entity "fifotodvi" is not in the component being instantiated.
+# ** Error: FIFOTODVI.vhd(104): Vopt Compiler exiting
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./test_gpu.fdo PAUSED at line 25

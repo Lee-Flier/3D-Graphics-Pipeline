@@ -1,0 +1,13 @@
+# Output products list for <Tex_buffer>
+Tex_buffer.asy
+Tex_buffer.mif
+Tex_buffer.ngc
+Tex_buffer.sym
+Tex_buffer.v
+Tex_buffer.veo
+Tex_buffer.vhd
+Tex_buffer.vho
+Tex_buffer.xco
+Tex_buffer_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+Tex_buffer_flist.txt
+Tex_buffer_xmdf.tcl

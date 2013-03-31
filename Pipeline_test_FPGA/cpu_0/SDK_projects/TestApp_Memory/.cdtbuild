@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.0.0?>
+
+<ManagedProjectBuildInfo>
+<project id="TestApp_Memory.xygwin.mb.exec.864102036" name="Xilinx MicroBlaze Executable" projectType="xygwin.mb.exec">
+<configuration id="mb.xygwin.exec.debug.1236917234" name="Debug" description="" parent="mb.xygwin.exec.debug" artifactName="TestApp_Memory" artifactExtension="elf" cleanCommand="rm -rf">
+<toolChain superClass="mb.xygwin.exec.debug.toolchain" id="mb.xygwin.exec.debug.toolchain.1159185248" name="Debug.toolchain">
+<tool superClass="mb.xygwin.exec.debug.com.xilinx.mdt.edk.build.tool.xygwin.mb.c.compiler" id="mb.xygwin.exec.debug.com.xilinx.mdt.edk.build.tool.xygwin.mb.c.compiler.545855537" name="MicroBlaze C Compiler">
+<option superClass="xygwin.mb.c.compiler.general.optimization.level" id="xygwin.mb.c.compiler.general.optimization.level.170072937" value="xygwin.mb.c.optimization.level.more" valueType="enumerated"/>
+<option superClass="xygwin.mb.c.compiler.debugging.level" id="xygwin.mb.c.compiler.debugging.level.148087352" value="xygwin.mb.c.debugging.level.default" valueType="enumerated"/>
+</tool>
+<tool superClass="mb.xygwin.exec.debug.com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.compiler" id="mb.xygwin.exec.debug.com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.compiler.1412337812" name="MicroBlaze C++ Compiler"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.mb.c.link" id="com.xilinx.mdt.edk.build.tool.xygwin.mb.c.link.892733346" name="MicroBlaze C Linker">
+<option superClass="com.xilinx.mdt.edk.managedbuilder.mb.linkerscript" id="com.xilinx.mdt.edk.managedbuilder.mb.linkerscript.1260343315" valueType="includePath">
+<listOptionValue value="../../../TestApp_Memory/src/TestApp_Memory_LinkScr.ld" builtIn="false"/>
+</option>
+</tool>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.link" id="com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.link.681216195" name="MicroBlaze C++ Linker"/>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<configuration id="mb.xygwin.exec.release.11318356" name="Release" description="" parent="mb.xygwin.exec.release" artifactName="TestApp_Memory" artifactExtension="elf" cleanCommand="rm -rf">
+<toolChain superClass="mb.xygwin.exec.release.toolchain" id="mb.xygwin.exec.release.toolchain.1435844896" name="Release.toolchain">
+<tool superClass="mb.xygwin.exec.release.com.xilinx.mdt.edk.build.tool.xygwin.mb.c.compiler" id="mb.xygwin.exec.release.com.xilinx.mdt.edk.build.tool.xygwin.mb.c.compiler.1620877756" name="MicroBlaze C Compiler">
+<option superClass="xygwin.mb.c.compiler.general.optimization.level" id="xygwin.mb.c.compiler.general.optimization.level.662167489" value="xygwin.mb.c.optimization.level.more" valueType="enumerated"/>
+<option superClass="com.xilinx.mdt.edk.managedbuilder.mb.mbspec.appmode" id="com.xilinx.mdt.edk.managedbuilder.mb.mbspec.appmode.1628207126"/>
+</tool>
+<tool superClass="mb.xygwin.exec.release.com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.compiler" id="mb.xygwin.exec.release.com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.compiler.925809417" name="MicroBlaze C++ Compiler"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.mb.c.link" id="com.xilinx.mdt.edk.build.tool.xygwin.mb.c.link.821873522" name="MicroBlaze C Linker">
+<option superClass="com.xilinx.mdt.edk.managedbuilder.mb.linkerscript" id="com.xilinx.mdt.edk.managedbuilder.mb.linkerscript.426725439" valueType="includePath">
+<listOptionValue value="../../../TestApp_Memory/src/TestApp_Memory_LinkScr.ld" builtIn="false"/>
+</option>
+</tool>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.link" id="com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.link.652503679" name="MicroBlaze C++ Linker"/>
+</toolChain>
+</configuration>
+<configuration id="mb.xygwin.exec.profile.31130280" name="Profile" description="" parent="mb.xygwin.exec.profile" artifactName="TestApp_Memory" artifactExtension="elf" cleanCommand="rm -rf">
+<toolChain superClass="mb.xygwin.exec.profile.toolchain" id="mb.xygwin.exec.profile.toolchain.1239751556" name="Profile.toolchain">
+<tool superClass="mb.xygwin.exec.profile.com.xilinx.mdt.edk.build.tool.xygwin.mb.c.compiler" id="mb.xygwin.exec.profile.com.xilinx.mdt.edk.build.tool.xygwin.mb.c.compiler.1412592048" name="MicroBlaze C Compiler">
+<option superClass="xygwin.mb.c.compiler.general.optimization.level" id="xygwin.mb.c.compiler.general.optimization.level.907957202" value="xygwin.mb.c.optimization.level.more" valueType="enumerated"/>
+<option superClass="xygwin.mb.c.compiler.debugging.level" id="xygwin.mb.c.compiler.debugging.level.1473445210" value="xygwin.mb.c.debugging.level.default" valueType="enumerated"/>
+<option superClass="com.xilinx.mdt.edk.managedbuilder.mb.mbspec.appmode" id="com.xilinx.mdt.edk.managedbuilder.mb.mbspec.appmode.1346304701"/>
+</tool>
+<tool superClass="mb.xygwin.exec.profile.com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.compiler" id="mb.xygwin.exec.profile.com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.compiler.454586380" name="MicroBlaze C++ Compiler"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.mb.c.link" id="com.xilinx.mdt.edk.build.tool.xygwin.mb.c.link.1753012424" name="MicroBlaze C Linker">
+<option superClass="com.xilinx.mdt.edk.managedbuilder.mb.linkerscript" id="com.xilinx.mdt.edk.managedbuilder.mb.linkerscript.386676445" valueType="includePath">
+<listOptionValue value="../../../TestApp_Memory/src/TestApp_Memory_LinkScr.ld" builtIn="false"/>
+</option>
+</tool>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.link" id="com.xilinx.mdt.edk.build.tool.xygwin.mb.cpp.link.849931248" name="MicroBlaze C++ Linker"/>
+</toolChain>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>

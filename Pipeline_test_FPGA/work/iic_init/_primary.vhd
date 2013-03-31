@@ -1,0 +1,65 @@
+library verilog;
+use verilog.vl_types.all;
+entity iic_init is
+    generic(
+        CH7301_ADDR     : integer := 118;
+        REG0_H21        : integer := 33;
+        REG0_H33        : integer := 51;
+        REG0_H34        : integer := 52;
+        REG0_H36        : integer := 54;
+        REG0_H49        : integer := 73;
+        DATA0_H21       : integer := 9;
+        DATA0_H33       : integer := 8;
+        DATA0_H34       : integer := 22;
+        DATA0_H36       : integer := 96;
+        DATA0_H49       : integer := 192;
+        AD9980_ADDR     : integer := 76;
+        REG1_H01        : integer := 1;
+        REG1_H02        : integer := 2;
+        REG1_H03        : integer := 3;
+        REG1_H04        : integer := 4;
+        REG1_H12        : integer := 18;
+        REG1_H13        : integer := 19;
+        REG1_H14        : integer := 20;
+        REG1_H19        : integer := 25;
+        REG1_H1A        : integer := 26;
+        REG1_H1E        : integer := 30;
+        REG1_H1F        : integer := 31;
+        REG1_H20        : integer := 32;
+        DATA1_H01       : integer := 66;
+        DATA1_H02       : integer := 0;
+        DATA1_H03       : integer := 96;
+        DATA1_H04       : integer := 128;
+        DATA1_H12       : integer := 152;
+        DATA1_H13       : integer := 32;
+        DATA1_H14       : integer := 156;
+        DATA1_H19       : integer := 4;
+        DATA1_H1A       : integer := 60;
+        DATA1_H1E       : integer := 164;
+        DATA1_H1F       : integer := 20;
+        DATA1_H20       : integer := 1;
+        CLK_RATE_MHZ    : integer := 200;
+        SCK_PERIOD_US   : integer := 30;
+        TRANSITION_CYCLE_MSB: integer := 11;
+        SDA_BUFFER_MSB  : integer := 27;
+        INIT_NUM        : integer := 16;
+        IDLE            : integer := 0;
+        INIT            : integer := 1;
+        START           : integer := 2;
+        CLK_FALL        : integer := 3;
+        SETUP           : integer := 4;
+        CLK_RISE        : integer := 5;
+        \WAIT\          : integer := 6;
+        START_BIT       : integer := 1;
+        ACK             : integer := 1;
+        STOP_BIT        : integer := 0;
+        WRITE           : integer := 0
+    );
+    port(
+        clk             : in     vl_logic;
+        Reset_n         : in     vl_logic;
+        SDA             : inout  vl_logic;
+        SCL             : inout  vl_logic;
+        Done            : out    vl_logic
+    );
+end iic_init;

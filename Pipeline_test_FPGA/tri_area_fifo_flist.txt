@@ -1,0 +1,12 @@
+# Output products list for <tri_area_fifo>
+tri_area_fifo.asy
+tri_area_fifo.ngc
+tri_area_fifo.sym
+tri_area_fifo.v
+tri_area_fifo.veo
+tri_area_fifo.vhd
+tri_area_fifo.vho
+tri_area_fifo.xco
+tri_area_fifo_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+tri_area_fifo_flist.txt
+tri_area_fifo_xmdf.tcl

@@ -1,0 +1,12 @@
+# Output products list for <tri_texture_fifo>
+tri_texture_fifo.asy
+tri_texture_fifo.ngc
+tri_texture_fifo.sym
+tri_texture_fifo.v
+tri_texture_fifo.veo
+tri_texture_fifo.vhd
+tri_texture_fifo.vho
+tri_texture_fifo.xco
+tri_texture_fifo_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+tri_texture_fifo_flist.txt
+tri_texture_fifo_xmdf.tcl

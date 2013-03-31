@@ -1,0 +1,18 @@
+#
+# Clock constraints
+#
+NET "CLK" TNM_NET = D_CLK ;
+
+#
+# Input keep/save net constraints
+#
+NET "TRIG1<*" S;
+NET "TRIG1<*" KEEP;
+NET "TRIG2<*" S;
+NET "TRIG2<*" KEEP;
+NET "TRIG3<*" S;
+NET "TRIG3<*" KEEP;
+NET "TRIG4<*" S;
+NET "TRIG4<*" KEEP;
+NET "TRIG5<*" S;
+NET "TRIG5<*" KEEP;

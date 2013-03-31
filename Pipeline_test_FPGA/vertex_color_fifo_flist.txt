@@ -1,0 +1,12 @@
+# Output products list for <vertex_color_fifo>
+vertex_color_fifo.asy
+vertex_color_fifo.ngc
+vertex_color_fifo.sym
+vertex_color_fifo.v
+vertex_color_fifo.veo
+vertex_color_fifo.vhd
+vertex_color_fifo.vho
+vertex_color_fifo.xco
+vertex_color_fifo_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+vertex_color_fifo_flist.txt
+vertex_color_fifo_xmdf.tcl

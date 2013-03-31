@@ -1,0 +1,46 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+ROOT := ..
+
+-include $(ROOT)/makefile.init
+-include ../../microblaze_0_sw_platform/microblaze_0/libgen.mk
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include $(SUBDIRS:%=%/subdir.mk)
+-include objects.mk
+-include $(DEPS)
+-include $(ROOT)/makefile.defs
+
+# All Target
+all: TestApp_Memory.elf
+
+dependents:
+	-cd D:/gpu_test_v3_1122_20110621/gpu_test_20110703/cpu_0/SDK_projects/microblaze_0_sw_platform && $(MAKE) all
+
+TestApp_Memory.elf:  ../../../TestApp_Memory/src/TestApp_Memory_LinkScr.ld $(LIBRARIES) $(LIBDEP) $(OBJS)
+	@echo 'Building target: $@'
+	mb-gcc -o $@ $(OBJS) $(USER_OBJS) $(LIBS) -mno-xl-soft-mul -mhard-float -mxl-pattern-compare -mcpu=v7.10.d  -L../../microblaze_0_sw_platform/microblaze_0/lib -xl-mode-executable   -T../../../TestApp_Memory/src/TestApp_Memory_LinkScr.ld
+	@echo 'Finished building: $@'
+	@echo
+	@echo "**************" Validating ELF File "**************"
+	@echo
+	@echo 'Validating ELF Section Addresses with Hardware Address Map...'
+	elfcheck -noheader -mhs D:/gpu_test_v3_1122_20110621/gpu_test_20110703/cpu_0/cpu_0.mhs -p xc5vlx110tff1136-1 -xmpdir D:/gpu_test_v3_1122_20110621/gpu_test_20110703/cpu_0 -pe microblaze_0 $@
+	@echo
+	@echo "**************" Determining Size of ELF File "**************"
+	@echo
+	mb-size $@
+	@echo
+
+clean:
+	-$(RM) $(OBJS) $(DEPS) TestApp_Memory.elf
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include $(ROOT)/makefile.targets

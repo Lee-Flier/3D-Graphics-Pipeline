@@ -1,0 +1,50 @@
+#  Simulation Model Generator
+#  Xilinx EDK 10.1.03 EDK_K_SP3.6
+#  Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+#
+#  File     cpu_0.do (Sat Apr 02 10:40:56 2011)
+#
+vlib microblaze_v7_10_d
+vmap microblaze_v7_10_d microblaze_v7_10_d
+vlib proc_common_v2_00_a
+vmap proc_common_v2_00_a proc_common_v2_00_a
+vlib plb_v46_v1_03_a
+vmap plb_v46_v1_03_a plb_v46_v1_03_a
+vlib lmb_v10_v1_00_a
+vmap lmb_v10_v1_00_a lmb_v10_v1_00_a
+vlib proc_common_v1_00_c
+vmap proc_common_v1_00_c proc_common_v1_00_c
+vlib lmb_bram_if_cntlr_v2_10_a
+vmap lmb_bram_if_cntlr_v2_10_a lmb_bram_if_cntlr_v2_10_a
+vlib lmb_bram_elaborate_v1_00_a
+vmap lmb_bram_elaborate_v1_00_a lmb_bram_elaborate_v1_00_a
+vlib plbv46_slave_single_v1_00_a
+vmap plbv46_slave_single_v1_00_a plbv46_slave_single_v1_00_a
+vlib xps_uartlite_v1_00_a
+vmap xps_uartlite_v1_00_a xps_uartlite_v1_00_a
+vlib interrupt_control_v2_00_a
+vmap interrupt_control_v2_00_a interrupt_control_v2_00_a
+vlib xps_gpio_v1_00_a
+vmap xps_gpio_v1_00_a xps_gpio_v1_00_a
+vlib xps_iic_v2_00_a
+vmap xps_iic_v2_00_a xps_iic_v2_00_a
+vlib plbv46_pim_v2_01_a
+vmap plbv46_pim_v2_01_a plbv46_pim_v2_01_a
+vlib sdma_v1_00_b
+vmap sdma_v1_00_b sdma_v1_00_b
+vlib mpmc_v4_03_a
+vmap mpmc_v4_03_a mpmc_v4_03_a
+vlib sysace_common_v1_00_c
+vmap sysace_common_v1_00_c sysace_common_v1_00_c
+vlib xps_sysace_v1_00_a
+vmap xps_sysace_v1_00_a xps_sysace_v1_00_a
+vlib clock_generator_v2_01_a
+vmap clock_generator_v2_01_a clock_generator_v2_01_a
+vlib mdm_v1_00_d
+vmap mdm_v1_00_d mdm_v1_00_d
+vlib proc_sys_reset_v2_00_a
+vmap proc_sys_reset_v2_00_a proc_sys_reset_v2_00_a
+vlib register_control_v1_00_a
+vmap register_control_v1_00_a register_control_v1_00_a
+vlib work
+vmap work work

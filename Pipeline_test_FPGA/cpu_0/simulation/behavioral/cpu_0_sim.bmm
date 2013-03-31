@@ -1,0 +1,14 @@
+// File: E:\test001\test\cpu_0\simulation\behavioral\cpu_0_sim.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE 100
+	ADDRESS_SPACE lmb_bram_combined COMBINED [0x00000000:0x00003fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			lmb_bram/lmb_bram/ramb36_0 [31:24] ;
+			lmb_bram/lmb_bram/ramb36_1 [23:16] ;
+			lmb_bram/lmb_bram/ramb36_2 [15:8] ;
+			lmb_bram/lmb_bram/ramb36_3 [7:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

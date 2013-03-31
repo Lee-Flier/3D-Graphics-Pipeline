@@ -1,0 +1,118 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "./Z_buffer.v" in library work
+Compiling verilog file "./vertex_color_fifo.v" in library work
+Module <Z_buffer> compiled
+Compiling verilog file "./tri_texture_fifo.v" in library work
+Module <vertex_color_fifo> compiled
+Compiling verilog file "./tri_raster_fifo.v" in library work
+Module <tri_texture_fifo> compiled
+Compiling verilog file "tri_area_fifo.v" in library work
+Module <tri_raster_fifo> compiled
+Compiling verilog file "./Tex_buffer.v" in library work
+Module <tri_area_fifo> compiled
+Compiling verilog file "./recip.v" in library work
+Module <Tex_buffer> compiled
+Compiling verilog file "./float18_mult_translation.v" in library work
+Module <recip> compiled
+Compiling verilog file "./float18_fix_conv_z.v" in library work
+Module <float18_mult_translation> compiled
+Compiling verilog file "./float18_fix_conv_y.v" in library work
+Module <float18_fix_conv_z> compiled
+Compiling verilog file "./float18_fix_conv_x.v" in library work
+Module <float18_fix_conv_y> compiled
+Compiling verilog file "./float18_add_translation.v" in library work
+Module <float18_fix_conv_x> compiled
+Compiling verilog file "./dist_ram_2port_1clk_translation.v" in library work
+Module <float18_add_translation> compiled
+Compiling verilog file "v_sync.v" in library work
+Module <dist_ram_2port_1clk_translation> compiled
+Compiling verilog file "tri_z_buffer.v" in library work
+Module <v_sync> compiled
+Compiling verilog file "tri_vertex_color.v" in library work
+Module <tri_z_buffer> compiled
+Compiling verilog file "tri_texture_map.v" in library work
+Module <tri_vertex_color> compiled
+Compiling verilog file "tri_raster.v" in library work
+Module <tri_texture_map> compiled
+Compiling verilog file "./ila4.v" in library work
+Module <tri_raster> compiled
+Compiling verilog file "./ila3.v" in library work
+Module <ila4> compiled
+Compiling verilog file "./ila1.v" in library work
+Module <ila3> compiled
+Compiling verilog file "iic_init.v" in library work
+Module <ila1> compiled
+Compiling verilog include file "iic_init_mode.v"
+Compiling verilog file "./icon1.v" in library work
+Module <iic_init> compiled
+Compiling verilog file "h_sync.v" in library work
+Module <icon1> compiled
+Compiling verilog file "./float32to18model.v" in library work
+Module <h_sync> compiled
+Compiling verilog file "./float18_div_translation.v" in library work
+Module <float32to18model> compiled
+Compiling verilog file "./fifo_translation.v" in library work
+Module <float18_div_translation> compiled
+Compiling verilog file "./fifo_linecreator.v" in library work
+Module <fifo_translation> compiled
+Compiling verilog file "dvi_out.v" in library work
+Module <fifo_linecreator> compiled
+Compiling verilog file "./buffer_RAM.v" in library work
+Module <dvi_out> compiled
+Compiling verilog file "raster_sys.v" in library work
+Module <buffer_RAM> compiled
+Module <raster_sys> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/gpu_pkg.vhd" in Library work.
+Package <gpu_pkg> compiled.
+Package body <gpu_pkg> compiled.
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/convers_float18_b.vhd" in Library work.
+Entity <convers_float18_b> compiled.
+Entity <convers_float18_b> (Architecture <hdl>) compiled.
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/matrix_mult4x4.vhd" in Library work.
+Entity <matrix_mult4x4> compiled.
+Entity <matrix_mult4x4> (Architecture <hdl>) compiled.
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/float32_float18_conv_9.vhd" in Library work.
+Entity <float32to18> compiled.
+Entity <float32to18> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/matrix_transformation.vhd" in Library work.
+Entity <matrix_transformation> compiled.
+Entity <matrix_transformation> (Architecture <hdl>) compiled.
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/line_creator.vhd" in Library work.
+Entity <line_creator> compiled.
+Entity <line_creator> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/cpu_0/hdl/cpu_0.vhd" in Library work.
+Entity <cpu_0> compiled.
+Entity <cpu_0> (Architecture <STRUCTURE>) compiled.
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/FIFOTODVI.vhd" in Library work.
+Entity <FIFOTODVI> compiled.
+Entity <FIFOTODVI> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/gpu_test_v3_1122_20110621/gpu_test_20110813/top.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <Behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.70 secs
+ 
+--> 
+
+Total memory usage is 130808 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
